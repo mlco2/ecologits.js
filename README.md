@@ -1,3 +1,11 @@
+> [!IMPORTANT]
+> **This repository is no longer maintained!** 
+> 
+> If you are willing to help us maintain it, we would happily welcome you on the team! 
+> Please, contact us on [Discord](https://discord.gg/GS9js2XkJR).
+
+---
+
 # ecologits.js
 
 This repository is a port of the [genai-impact/ecologits methodology](https://github.com/genai-impact/ecologits) to JavaScript.
