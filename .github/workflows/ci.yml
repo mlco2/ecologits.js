@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  core-package:
+    name: Build and pack core (no publication)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Install existing Yarn workspaces
+        run: npx --yes --package=yarn@1.22.19 yarn install --frozen-lockfile --ignore-scripts --non-interactive
+      - name: Build only the core package
+        run: npm run build --workspace=@ecologits/ecologits.js
+      - name: Pack core without publishing
+        working-directory: packages/ecologits.js
+        run: npm pack
+      - uses: actions/upload-artifact@v4
+        with:
+          name: core-package
+          path: packages/ecologits.js/*.tgz
+          if-no-files-found: error

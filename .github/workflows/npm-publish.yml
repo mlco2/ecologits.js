@@ -1,0 +1,90 @@
+name: Publish core to npm
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version already set in the core package.json (must be unpublished)'
+        required: true
+        type: string
+      publish:
+        description: 'Actually publish @ecologits/ecologits.js to PUBLIC npm under latest'
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: npm-publish-core
+  cancel-in-progress: false
+
+jobs:
+  package:
+    name: Validate, build and pack core
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Validate release target
+        working-directory: packages/ecologits.js
+        env:
+          RELEASE_VERSION: ${{ inputs.version }}
+        run: |
+          node --input-type=module <<'JS'
+          import assert from 'node:assert/strict';
+          import { readFileSync } from 'node:fs';
+          const pkg = JSON.parse(readFileSync('package.json', 'utf8'));
+          assert.equal(pkg.name, '@ecologits/ecologits.js');
+          assert.equal(pkg.version, process.env.RELEASE_VERSION);
+          assert.equal(pkg.publishConfig.access, 'public');
+          assert.equal(pkg.publishConfig.registry, 'https://registry.npmjs.org/');
+          assert.equal(pkg.publishConfig.tag, 'latest');
+          JS
+      - name: Install existing Yarn workspaces
+        run: npx --yes --package=yarn@1.22.19 yarn install --frozen-lockfile --ignore-scripts --non-interactive
+      - name: Build only the core package
+        run: npm run build --workspace=@ecologits/ecologits.js
+      - name: Pack core without publishing
+        working-directory: packages/ecologits.js
+        run: npm pack
+      - uses: actions/upload-artifact@v4
+        with:
+          name: core-release
+          path: packages/ecologits.js/*.tgz
+          if-no-files-found: error
+
+  publish:
+    name: Publish ONLY the core package
+    needs: package
+    if: >-
+      inputs.publish &&
+      github.repository == 'mlco2/ecologits.js' &&
+      github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    environment: npm
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          registry-url: 'https://registry.npmjs.org/'
+          package-manager-cache: false
+      - name: Ensure npm supports trusted publishing
+        run: npm install --global npm@11
+      - uses: actions/download-artifact@v4
+        with:
+          name: core-release
+          path: release
+      - name: Publish validated tarball with OIDC
+        working-directory: release
+        run: npm publish ./*.tgz --access public --tag latest --registry=https://registry.npmjs.org/

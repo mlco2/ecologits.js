@@ -1,7 +1,9 @@
 node_modules
-yarn.lock
 es
 .DS_Store
 .turbo
 yarn-error.log
+.npm-cache
+*.tgz
+/packages/ecologits.js/LICENSE
 .env

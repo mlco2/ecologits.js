@@ -1,5 +1,5 @@
 {
-  "name": "@genai-impact/ecologits.js",
+  "name": "@ecologits/ecologits.js",
   "version": "2.0.5",
   "description": "Core library for the Ecologits project, port of the ecologits methodology to TypeScript",
   "type": "module",
@@ -8,8 +8,25 @@
   "source": "src/index.ts",
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "yarn build",
+    "prepublishOnly": "npm run build",
+    "prepack": "node -e \"require('node:fs').copyFileSync('../../LICENSE', 'LICENSE')\"",
     "watch": "tsc-watch --noClear",
     "clean": "rm -rf es"
+  },
+  "files": ["es"],
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  },
+  "homepage": "https://ecologits.ai",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlco2/ecologits.js.git",
+    "directory": "packages/ecologits.js"
+  },
+  "license": "MPL-2.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest"
   }
 }
