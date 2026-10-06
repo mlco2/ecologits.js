@@ -1,12 +1,8 @@
 # Ecologits.js - Core calculator
 
-Version 2.0.5 is the existing core implementation, published under the new
-`@ecologits` scope. It does not introduce the planned 3.0 redesign. The existing
-OpenAI and Mistral adapters remain under `@genai-impact` and are not part of this
-release.
+Version 2.0.5 is the existing core implementation, published under the new `@ecologits` scope. It does not introduce the planned 3.0 redesign. The existing OpenAI and Mistral adapters remain under `@genai-impact` and are not part of this release.
 
-Importing the package fetches model data from GitHub, so network access is
-required at initialization.
+Importing the package fetches model data from GitHub, so network access is required at initialization.
 
 ## Install
 
