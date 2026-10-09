@@ -1,19 +1,7 @@
 {
-  "includes": ["src/@types/*.d.ts, @types/*.d.ts"],
-  "compilerOptions": {
-    "rootDir": "./src",
-    "outDir": "./es",
-    "target": "ESNext",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true,
-    "jsx": "react-jsx"
-  }
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "types": ["node"]
+    },
+    "include": ["src/**/*.ts", "test/**/*.ts", "tsup.config.ts", "vitest.config.ts"]
 }

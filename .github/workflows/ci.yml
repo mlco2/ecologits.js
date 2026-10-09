@@ -2,32 +2,48 @@ name: CI
 
 on:
   push:
+    branches: [main]
   pull_request:
-  workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  core-package:
-    name: Build and pack core (no publication)
+  build:
+    name: Node ${{ matrix.node }}
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [22, 24, 26]
     steps:
       - uses: actions/checkout@v6
+
       - uses: actions/setup-node@v6
         with:
-          node-version: '24'
-          package-manager-cache: false
-      - name: Install existing Yarn workspaces
-        run: npx --yes --package=yarn@1.22.19 yarn install --frozen-lockfile --ignore-scripts --non-interactive
-      - name: Build only the core package
-        run: npm run build --workspace=@ecologits/ecologits.js
-      - name: Pack core without publishing
-        working-directory: packages/ecologits.js
-        run: npm pack
-      - uses: actions/upload-artifact@v4
-        with:
-          name: core-package
-          path: packages/ecologits.js/*.tgz
-          if-no-files-found: error
+          node-version: ${{ matrix.node }}
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Check formatting
+        run: npm run format:check
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Test
+        run: npm run test
+
+      - name: Build
+        run: npm run build
+
+      - name: Generated data is in sync with spec/data
+        run: npm run check-data
+
+      - name: Spec artefacts conform to the schemas
+        run: npm run check-spec

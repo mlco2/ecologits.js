@@ -1,0 +1,44 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://ecologits.ai/spec/schema/electricity_mixes.schema.json",
+    "title": "electricity_mixes.json",
+    "description": "Electricity-mix impact factors, keyed by ISO 3166-1 alpha-3 zone, per kWh of electricity consumed.",
+    "type": "object",
+    "required": ["electricity_mixes"],
+    "properties": {
+        "electricity_mixes": {
+            "type": ["array", "null"],
+            "items": {
+                "type": "object",
+                "required": ["name", "adpe", "pe", "gwp", "wue", "warnings"],
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "adpe": {
+                        "type": "number"
+                    },
+                    "pe": {
+                        "type": "number"
+                    },
+                    "gwp": {
+                        "type": "number"
+                    },
+                    "wue": {
+                        "type": "number"
+                    },
+                    "warnings": {
+                        "type": ["array", "null"],
+                        "items": {
+                            "type": "string",
+                            "minLength": 1
+                        }
+                    }
+                },
+                "additionalProperties": false
+            }
+        }
+    },
+    "additionalProperties": false
+}

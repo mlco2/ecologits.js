@@ -1,0 +1,1472 @@
+{
+ "kind": "range-value",
+ "values": [
+  {
+   "kind": "scalar",
+   "value": 0
+  },
+  {
+   "kind": "scalar",
+   "value": 1
+  },
+  {
+   "kind": "scalar",
+   "value": 2.5
+  },
+  {
+   "kind": "scalar",
+   "value": -3
+  },
+  {
+   "kind": "range",
+   "min": 1.0,
+   "max": 2.0
+  },
+  {
+   "kind": "range",
+   "min": -1.0,
+   "max": 1.0
+  },
+  {
+   "kind": "range",
+   "min": 2.0,
+   "max": 2.0
+  }
+ ],
+ "pairs": [
+  {
+   "left": {
+    "kind": "scalar",
+    "value": 0
+   },
+   "right": {
+    "kind": "scalar",
+    "value": 0
+   },
+   "results": {
+    "add": 0,
+    "mul": 0,
+    "div": {
+     "error": "ZeroDivisionError"
+    },
+    "eq": true,
+    "lte": true,
+    "lt": false,
+    "gte": true,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": 0
+   },
+   "right": {
+    "kind": "scalar",
+    "value": 1
+   },
+   "results": {
+    "add": 1,
+    "mul": 0,
+    "div": 0.0,
+    "eq": false,
+    "lte": true,
+    "lt": true,
+    "gte": false,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": 0
+   },
+   "right": {
+    "kind": "scalar",
+    "value": 2.5
+   },
+   "results": {
+    "add": 2.5,
+    "mul": 0.0,
+    "div": 0.0,
+    "eq": false,
+    "lte": true,
+    "lt": true,
+    "gte": false,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": 0
+   },
+   "right": {
+    "kind": "scalar",
+    "value": -3
+   },
+   "results": {
+    "add": -3,
+    "mul": 0,
+    "div": -0.0,
+    "eq": false,
+    "lte": false,
+    "lt": false,
+    "gte": true,
+    "gt": true
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": 0
+   },
+   "right": {
+    "kind": "range",
+    "min": 1.0,
+    "max": 2.0
+   },
+   "results": {
+    "add": {
+     "min": 1.0,
+     "max": 2.0
+    },
+    "mul": {
+     "min": 0.0,
+     "max": 0.0
+    },
+    "div": {
+     "error": "ZeroDivisionError"
+    },
+    "eq": false,
+    "lte": true,
+    "lt": true,
+    "gte": false,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": 0
+   },
+   "right": {
+    "kind": "range",
+    "min": -1.0,
+    "max": 1.0
+   },
+   "results": {
+    "add": {
+     "min": -1.0,
+     "max": 1.0
+    },
+    "mul": {
+     "min": -0.0,
+     "max": 0.0
+    },
+    "div": {
+     "error": "ZeroDivisionError"
+    },
+    "eq": false,
+    "lte": false,
+    "lt": false,
+    "gte": false,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": 0
+   },
+   "right": {
+    "kind": "range",
+    "min": 2.0,
+    "max": 2.0
+   },
+   "results": {
+    "add": {
+     "min": 2.0,
+     "max": 2.0
+    },
+    "mul": {
+     "min": 0.0,
+     "max": 0.0
+    },
+    "div": {
+     "error": "ZeroDivisionError"
+    },
+    "eq": false,
+    "lte": true,
+    "lt": true,
+    "gte": false,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": 1
+   },
+   "right": {
+    "kind": "scalar",
+    "value": 0
+   },
+   "results": {
+    "add": 1,
+    "mul": 0,
+    "div": {
+     "error": "ZeroDivisionError"
+    },
+    "eq": false,
+    "lte": false,
+    "lt": false,
+    "gte": true,
+    "gt": true
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": 1
+   },
+   "right": {
+    "kind": "scalar",
+    "value": 1
+   },
+   "results": {
+    "add": 2,
+    "mul": 1,
+    "div": 1.0,
+    "eq": true,
+    "lte": true,
+    "lt": false,
+    "gte": true,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": 1
+   },
+   "right": {
+    "kind": "scalar",
+    "value": 2.5
+   },
+   "results": {
+    "add": 3.5,
+    "mul": 2.5,
+    "div": 0.4,
+    "eq": false,
+    "lte": true,
+    "lt": true,
+    "gte": false,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": 1
+   },
+   "right": {
+    "kind": "scalar",
+    "value": -3
+   },
+   "results": {
+    "add": -2,
+    "mul": -3,
+    "div": -0.3333333333333333,
+    "eq": false,
+    "lte": false,
+    "lt": false,
+    "gte": true,
+    "gt": true
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": 1
+   },
+   "right": {
+    "kind": "range",
+    "min": 1.0,
+    "max": 2.0
+   },
+   "results": {
+    "add": {
+     "min": 2.0,
+     "max": 3.0
+    },
+    "mul": {
+     "min": 1.0,
+     "max": 2.0
+    },
+    "div": {
+     "min": 1.0,
+     "max": 2.0
+    },
+    "eq": false,
+    "lte": true,
+    "lt": false,
+    "gte": false,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": 1
+   },
+   "right": {
+    "kind": "range",
+    "min": -1.0,
+    "max": 1.0
+   },
+   "results": {
+    "add": {
+     "min": 0.0,
+     "max": 2.0
+    },
+    "mul": {
+     "min": -1.0,
+     "max": 1.0
+    },
+    "div": {
+     "min": -1.0,
+     "max": 1.0
+    },
+    "eq": false,
+    "lte": false,
+    "lt": false,
+    "gte": true,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": 1
+   },
+   "right": {
+    "kind": "range",
+    "min": 2.0,
+    "max": 2.0
+   },
+   "results": {
+    "add": {
+     "min": 3.0,
+     "max": 3.0
+    },
+    "mul": {
+     "min": 2.0,
+     "max": 2.0
+    },
+    "div": {
+     "min": 2.0,
+     "max": 2.0
+    },
+    "eq": false,
+    "lte": true,
+    "lt": true,
+    "gte": false,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": 2.5
+   },
+   "right": {
+    "kind": "scalar",
+    "value": 0
+   },
+   "results": {
+    "add": 2.5,
+    "mul": 0.0,
+    "div": {
+     "error": "ZeroDivisionError"
+    },
+    "eq": false,
+    "lte": false,
+    "lt": false,
+    "gte": true,
+    "gt": true
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": 2.5
+   },
+   "right": {
+    "kind": "scalar",
+    "value": 1
+   },
+   "results": {
+    "add": 3.5,
+    "mul": 2.5,
+    "div": 2.5,
+    "eq": false,
+    "lte": false,
+    "lt": false,
+    "gte": true,
+    "gt": true
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": 2.5
+   },
+   "right": {
+    "kind": "scalar",
+    "value": 2.5
+   },
+   "results": {
+    "add": 5.0,
+    "mul": 6.25,
+    "div": 1.0,
+    "eq": true,
+    "lte": true,
+    "lt": false,
+    "gte": true,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": 2.5
+   },
+   "right": {
+    "kind": "scalar",
+    "value": -3
+   },
+   "results": {
+    "add": -0.5,
+    "mul": -7.5,
+    "div": -0.8333333333333334,
+    "eq": false,
+    "lte": false,
+    "lt": false,
+    "gte": true,
+    "gt": true
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": 2.5
+   },
+   "right": {
+    "kind": "range",
+    "min": 1.0,
+    "max": 2.0
+   },
+   "results": {
+    "add": {
+     "min": 3.5,
+     "max": 4.5
+    },
+    "mul": {
+     "min": 2.5,
+     "max": 5.0
+    },
+    "div": {
+     "min": 0.4,
+     "max": 0.8
+    },
+    "eq": false,
+    "lte": false,
+    "lt": false,
+    "gte": true,
+    "gt": true
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": 2.5
+   },
+   "right": {
+    "kind": "range",
+    "min": -1.0,
+    "max": 1.0
+   },
+   "results": {
+    "add": {
+     "min": 1.5,
+     "max": 3.5
+    },
+    "mul": {
+     "min": -2.5,
+     "max": 2.5
+    },
+    "div": {
+     "min": -0.4,
+     "max": 0.4
+    },
+    "eq": false,
+    "lte": false,
+    "lt": false,
+    "gte": true,
+    "gt": true
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": 2.5
+   },
+   "right": {
+    "kind": "range",
+    "min": 2.0,
+    "max": 2.0
+   },
+   "results": {
+    "add": {
+     "min": 4.5,
+     "max": 4.5
+    },
+    "mul": {
+     "min": 5.0,
+     "max": 5.0
+    },
+    "div": {
+     "min": 0.8,
+     "max": 0.8
+    },
+    "eq": false,
+    "lte": false,
+    "lt": false,
+    "gte": true,
+    "gt": true
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": -3
+   },
+   "right": {
+    "kind": "scalar",
+    "value": 0
+   },
+   "results": {
+    "add": -3,
+    "mul": 0,
+    "div": {
+     "error": "ZeroDivisionError"
+    },
+    "eq": false,
+    "lte": true,
+    "lt": true,
+    "gte": false,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": -3
+   },
+   "right": {
+    "kind": "scalar",
+    "value": 1
+   },
+   "results": {
+    "add": -2,
+    "mul": -3,
+    "div": -3.0,
+    "eq": false,
+    "lte": true,
+    "lt": true,
+    "gte": false,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": -3
+   },
+   "right": {
+    "kind": "scalar",
+    "value": 2.5
+   },
+   "results": {
+    "add": -0.5,
+    "mul": -7.5,
+    "div": -1.2,
+    "eq": false,
+    "lte": true,
+    "lt": true,
+    "gte": false,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": -3
+   },
+   "right": {
+    "kind": "scalar",
+    "value": -3
+   },
+   "results": {
+    "add": -6,
+    "mul": 9,
+    "div": 1.0,
+    "eq": true,
+    "lte": true,
+    "lt": false,
+    "gte": true,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": -3
+   },
+   "right": {
+    "kind": "range",
+    "min": 1.0,
+    "max": 2.0
+   },
+   "results": {
+    "add": {
+     "min": -2.0,
+     "max": -1.0
+    },
+    "mul": {
+     "error": "ValidationError"
+    },
+    "div": {
+     "error": "ValidationError"
+    },
+    "eq": false,
+    "lte": true,
+    "lt": true,
+    "gte": false,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": -3
+   },
+   "right": {
+    "kind": "range",
+    "min": -1.0,
+    "max": 1.0
+   },
+   "results": {
+    "add": {
+     "min": -4.0,
+     "max": -2.0
+    },
+    "mul": {
+     "error": "ValidationError"
+    },
+    "div": {
+     "error": "ValidationError"
+    },
+    "eq": false,
+    "lte": true,
+    "lt": true,
+    "gte": false,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "scalar",
+    "value": -3
+   },
+   "right": {
+    "kind": "range",
+    "min": 2.0,
+    "max": 2.0
+   },
+   "results": {
+    "add": {
+     "min": -1.0,
+     "max": -1.0
+    },
+    "mul": {
+     "min": -6.0,
+     "max": -6.0
+    },
+    "div": {
+     "min": -0.6666666666666666,
+     "max": -0.6666666666666666
+    },
+    "eq": false,
+    "lte": true,
+    "lt": true,
+    "gte": false,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "range",
+    "min": 1.0,
+    "max": 2.0
+   },
+   "right": {
+    "kind": "scalar",
+    "value": 0
+   },
+   "results": {
+    "add": {
+     "min": 1.0,
+     "max": 2.0
+    },
+    "mul": {
+     "min": 0.0,
+     "max": 0.0
+    },
+    "div": {
+     "error": "ZeroDivisionError"
+    },
+    "eq": false,
+    "lte": false,
+    "lt": false,
+    "gte": true,
+    "gt": true
+   }
+  },
+  {
+   "left": {
+    "kind": "range",
+    "min": 1.0,
+    "max": 2.0
+   },
+   "right": {
+    "kind": "scalar",
+    "value": 1
+   },
+   "results": {
+    "add": {
+     "min": 2.0,
+     "max": 3.0
+    },
+    "mul": {
+     "min": 1.0,
+     "max": 2.0
+    },
+    "div": {
+     "min": 1.0,
+     "max": 2.0
+    },
+    "eq": false,
+    "lte": false,
+    "lt": false,
+    "gte": true,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "range",
+    "min": 1.0,
+    "max": 2.0
+   },
+   "right": {
+    "kind": "scalar",
+    "value": 2.5
+   },
+   "results": {
+    "add": {
+     "min": 3.5,
+     "max": 4.5
+    },
+    "mul": {
+     "min": 2.5,
+     "max": 5.0
+    },
+    "div": {
+     "min": 0.4,
+     "max": 0.8
+    },
+    "eq": false,
+    "lte": true,
+    "lt": true,
+    "gte": false,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "range",
+    "min": 1.0,
+    "max": 2.0
+   },
+   "right": {
+    "kind": "scalar",
+    "value": -3
+   },
+   "results": {
+    "add": {
+     "min": -2.0,
+     "max": -1.0
+    },
+    "mul": {
+     "error": "ValidationError"
+    },
+    "div": {
+     "error": "ValidationError"
+    },
+    "eq": false,
+    "lte": false,
+    "lt": false,
+    "gte": true,
+    "gt": true
+   }
+  },
+  {
+   "left": {
+    "kind": "range",
+    "min": 1.0,
+    "max": 2.0
+   },
+   "right": {
+    "kind": "range",
+    "min": 1.0,
+    "max": 2.0
+   },
+   "results": {
+    "add": {
+     "min": 2.0,
+     "max": 4.0
+    },
+    "mul": {
+     "min": 1.0,
+     "max": 4.0
+    },
+    "div": {
+     "error": "ValidationError"
+    },
+    "eq": true,
+    "lte": true,
+    "lt": false,
+    "gte": true,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "range",
+    "min": 1.0,
+    "max": 2.0
+   },
+   "right": {
+    "kind": "range",
+    "min": -1.0,
+    "max": 1.0
+   },
+   "results": {
+    "add": {
+     "min": 0.0,
+     "max": 3.0
+    },
+    "mul": {
+     "min": -1.0,
+     "max": 2.0
+    },
+    "div": {
+     "error": "ValidationError"
+    },
+    "eq": false,
+    "lte": false,
+    "lt": false,
+    "gte": true,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "range",
+    "min": 1.0,
+    "max": 2.0
+   },
+   "right": {
+    "kind": "range",
+    "min": 2.0,
+    "max": 2.0
+   },
+   "results": {
+    "add": {
+     "min": 3.0,
+     "max": 4.0
+    },
+    "mul": {
+     "min": 2.0,
+     "max": 4.0
+    },
+    "div": {
+     "error": "ValidationError"
+    },
+    "eq": false,
+    "lte": true,
+    "lt": false,
+    "gte": false,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "range",
+    "min": -1.0,
+    "max": 1.0
+   },
+   "right": {
+    "kind": "scalar",
+    "value": 0
+   },
+   "results": {
+    "add": {
+     "min": -1.0,
+     "max": 1.0
+    },
+    "mul": {
+     "min": -0.0,
+     "max": 0.0
+    },
+    "div": {
+     "error": "ZeroDivisionError"
+    },
+    "eq": false,
+    "lte": false,
+    "lt": false,
+    "gte": false,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "range",
+    "min": -1.0,
+    "max": 1.0
+   },
+   "right": {
+    "kind": "scalar",
+    "value": 1
+   },
+   "results": {
+    "add": {
+     "min": 0.0,
+     "max": 2.0
+    },
+    "mul": {
+     "min": -1.0,
+     "max": 1.0
+    },
+    "div": {
+     "min": -1.0,
+     "max": 1.0
+    },
+    "eq": false,
+    "lte": true,
+    "lt": false,
+    "gte": false,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "range",
+    "min": -1.0,
+    "max": 1.0
+   },
+   "right": {
+    "kind": "scalar",
+    "value": 2.5
+   },
+   "results": {
+    "add": {
+     "min": 1.5,
+     "max": 3.5
+    },
+    "mul": {
+     "min": -2.5,
+     "max": 2.5
+    },
+    "div": {
+     "min": -0.4,
+     "max": 0.4
+    },
+    "eq": false,
+    "lte": true,
+    "lt": true,
+    "gte": false,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "range",
+    "min": -1.0,
+    "max": 1.0
+   },
+   "right": {
+    "kind": "scalar",
+    "value": -3
+   },
+   "results": {
+    "add": {
+     "min": -4.0,
+     "max": -2.0
+    },
+    "mul": {
+     "error": "ValidationError"
+    },
+    "div": {
+     "error": "ValidationError"
+    },
+    "eq": false,
+    "lte": false,
+    "lt": false,
+    "gte": true,
+    "gt": true
+   }
+  },
+  {
+   "left": {
+    "kind": "range",
+    "min": -1.0,
+    "max": 1.0
+   },
+   "right": {
+    "kind": "range",
+    "min": 1.0,
+    "max": 2.0
+   },
+   "results": {
+    "add": {
+     "min": 0.0,
+     "max": 3.0
+    },
+    "mul": {
+     "min": -1.0,
+     "max": 2.0
+    },
+    "div": {
+     "error": "ValidationError"
+    },
+    "eq": false,
+    "lte": true,
+    "lt": false,
+    "gte": false,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "range",
+    "min": -1.0,
+    "max": 1.0
+   },
+   "right": {
+    "kind": "range",
+    "min": -1.0,
+    "max": 1.0
+   },
+   "results": {
+    "add": {
+     "min": -2.0,
+     "max": 2.0
+    },
+    "mul": {
+     "min": 1.0,
+     "max": 1.0
+    },
+    "div": {
+     "error": "ValidationError"
+    },
+    "eq": true,
+    "lte": true,
+    "lt": false,
+    "gte": true,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "range",
+    "min": -1.0,
+    "max": 1.0
+   },
+   "right": {
+    "kind": "range",
+    "min": 2.0,
+    "max": 2.0
+   },
+   "results": {
+    "add": {
+     "min": 1.0,
+     "max": 3.0
+    },
+    "mul": {
+     "min": -2.0,
+     "max": 2.0
+    },
+    "div": {
+     "error": "ValidationError"
+    },
+    "eq": false,
+    "lte": true,
+    "lt": true,
+    "gte": false,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "range",
+    "min": 2.0,
+    "max": 2.0
+   },
+   "right": {
+    "kind": "scalar",
+    "value": 0
+   },
+   "results": {
+    "add": {
+     "min": 2.0,
+     "max": 2.0
+    },
+    "mul": {
+     "min": 0.0,
+     "max": 0.0
+    },
+    "div": {
+     "error": "ZeroDivisionError"
+    },
+    "eq": false,
+    "lte": false,
+    "lt": false,
+    "gte": true,
+    "gt": true
+   }
+  },
+  {
+   "left": {
+    "kind": "range",
+    "min": 2.0,
+    "max": 2.0
+   },
+   "right": {
+    "kind": "scalar",
+    "value": 1
+   },
+   "results": {
+    "add": {
+     "min": 3.0,
+     "max": 3.0
+    },
+    "mul": {
+     "min": 2.0,
+     "max": 2.0
+    },
+    "div": {
+     "min": 2.0,
+     "max": 2.0
+    },
+    "eq": false,
+    "lte": false,
+    "lt": false,
+    "gte": true,
+    "gt": true
+   }
+  },
+  {
+   "left": {
+    "kind": "range",
+    "min": 2.0,
+    "max": 2.0
+   },
+   "right": {
+    "kind": "scalar",
+    "value": 2.5
+   },
+   "results": {
+    "add": {
+     "min": 4.5,
+     "max": 4.5
+    },
+    "mul": {
+     "min": 5.0,
+     "max": 5.0
+    },
+    "div": {
+     "min": 0.8,
+     "max": 0.8
+    },
+    "eq": false,
+    "lte": true,
+    "lt": true,
+    "gte": false,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "range",
+    "min": 2.0,
+    "max": 2.0
+   },
+   "right": {
+    "kind": "scalar",
+    "value": -3
+   },
+   "results": {
+    "add": {
+     "min": -1.0,
+     "max": -1.0
+    },
+    "mul": {
+     "min": -6.0,
+     "max": -6.0
+    },
+    "div": {
+     "min": -0.6666666666666666,
+     "max": -0.6666666666666666
+    },
+    "eq": false,
+    "lte": false,
+    "lt": false,
+    "gte": true,
+    "gt": true
+   }
+  },
+  {
+   "left": {
+    "kind": "range",
+    "min": 2.0,
+    "max": 2.0
+   },
+   "right": {
+    "kind": "range",
+    "min": 1.0,
+    "max": 2.0
+   },
+   "results": {
+    "add": {
+     "min": 3.0,
+     "max": 4.0
+    },
+    "mul": {
+     "min": 2.0,
+     "max": 4.0
+    },
+    "div": {
+     "error": "ValidationError"
+    },
+    "eq": false,
+    "lte": true,
+    "lt": false,
+    "gte": true,
+    "gt": false
+   }
+  },
+  {
+   "left": {
+    "kind": "range",
+    "min": 2.0,
+    "max": 2.0
+   },
+   "right": {
+    "kind": "range",
+    "min": -1.0,
+    "max": 1.0
+   },
+   "results": {
+    "add": {
+     "min": 1.0,
+     "max": 3.0
+    },
+    "mul": {
+     "min": -2.0,
+     "max": 2.0
+    },
+    "div": {
+     "error": "ValidationError"
+    },
+    "eq": false,
+    "lte": false,
+    "lt": false,
+    "gte": true,
+    "gt": true
+   }
+  },
+  {
+   "left": {
+    "kind": "range",
+    "min": 2.0,
+    "max": 2.0
+   },
+   "right": {
+    "kind": "range",
+    "min": 2.0,
+    "max": 2.0
+   },
+   "results": {
+    "add": {
+     "min": 4.0,
+     "max": 4.0
+    },
+    "mul": {
+     "min": 4.0,
+     "max": 4.0
+    },
+    "div": {
+     "error": "ValidationError"
+    },
+    "eq": true,
+    "lte": true,
+    "lt": false,
+    "gte": true,
+    "gt": false
+   }
+  }
+ ],
+ "formats": [
+  {
+   "value": {
+    "kind": "range",
+    "min": 1.0,
+    "max": 2.0
+   },
+   "formatted": "1.5 [1.0 - 2.0]"
+  },
+  {
+   "value": {
+    "kind": "range",
+    "min": -1.0,
+    "max": 1.0
+   },
+   "formatted": "0.0 [-1.0 - 1.0]"
+  },
+  {
+   "value": {
+    "kind": "range",
+    "min": 2.0,
+    "max": 2.0
+   },
+   "formatted": "2.0 [2.0 - 2.0]"
+  },
+  {
+   "value": {
+    "kind": "range",
+    "min": -1e-05,
+    "max": 1e-05
+   },
+   "formatted": "0.0 [-1e-05 - 1e-05]"
+  },
+  {
+   "value": {
+    "kind": "range",
+    "min": 1e-07,
+    "max": 2e-07
+   },
+   "formatted": "1.5e-07 [1e-07 - 2e-07]"
+  },
+  {
+   "value": {
+    "kind": "range",
+    "min": 1e-06,
+    "max": 2e-06
+   },
+   "formatted": "1.5e-06 [1e-06 - 2e-06]"
+  },
+  {
+   "value": {
+    "kind": "range",
+    "min": 1e-05,
+    "max": 2e-05
+   },
+   "formatted": "1.5000000000000002e-05 [1e-05 - 2e-05]"
+  },
+  {
+   "value": {
+    "kind": "range",
+    "min": 9.999e-05,
+    "max": 9.999e-05
+   },
+   "formatted": "9.999e-05 [9.999e-05 - 9.999e-05]"
+  },
+  {
+   "value": {
+    "kind": "range",
+    "min": 0.0001,
+    "max": 0.0002
+   },
+   "formatted": "0.00015000000000000001 [0.0001 - 0.0002]"
+  },
+  {
+   "value": {
+    "kind": "range",
+    "min": 0.0,
+    "max": 0.0
+   },
+   "formatted": "0.0 [0.0 - 0.0]"
+  },
+  {
+   "value": {
+    "kind": "range",
+    "min": 0.1,
+    "max": 0.2
+   },
+   "formatted": "0.15000000000000002 [0.1 - 0.2]"
+  },
+  {
+   "value": {
+    "kind": "range",
+    "min": 0.3333333333333333,
+    "max": 0.3333333333333333
+   },
+   "formatted": "0.3333333333333333 [0.3333333333333333 - 0.3333333333333333]"
+  },
+  {
+   "value": {
+    "kind": "range",
+    "min": 123.456,
+    "max": 123.456
+   },
+   "formatted": "123.456 [123.456 - 123.456]"
+  },
+  {
+   "value": {
+    "kind": "range",
+    "min": 1000000000000000.0,
+    "max": 1000000000000000.0
+   },
+   "formatted": "1000000000000000.0 [1000000000000000.0 - 1000000000000000.0]"
+  },
+  {
+   "value": {
+    "kind": "range",
+    "min": 1e+16,
+    "max": 2e+16
+   },
+   "formatted": "1.5e+16 [1e+16 - 2e+16]"
+  },
+  {
+   "value": {
+    "kind": "range",
+    "min": 1e+21,
+    "max": 1e+21
+   },
+   "formatted": "1e+21 [1e+21 - 1e+21]"
+  }
+ ]
+}

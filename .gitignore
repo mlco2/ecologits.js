@@ -1,9 +1,11 @@
 node_modules
-es
-.DS_Store
+dist
+coverage
 .turbo
-yarn-error.log
+*.tsbuildinfo
+.DS_Store
 .npm-cache
 *.tgz
 /packages/ecologits.js/LICENSE
 .env
+__pycache__

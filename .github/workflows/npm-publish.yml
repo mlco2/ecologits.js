@@ -26,7 +26,7 @@ jobs:
           ref: ${{ github.sha }}
       - uses: actions/setup-node@v6
         with:
-          node-version: '24'
+          node-version: "24"
           package-manager-cache: false
       - name: Validate release target
         working-directory: packages/ecologits.js
@@ -57,8 +57,8 @@ jobs:
           assert.notEqual(response.status, 200, `${pkg.name}@${pkg.version} is already published; npm versions cannot be overwritten`);
           assert.equal(response.status, 404, `Could not verify npm version availability: HTTP ${response.status}`);
           JS
-      - name: Install existing Yarn workspaces
-        run: npx --yes --package=yarn@1.22.19 yarn install --frozen-lockfile --ignore-scripts --non-interactive
+      - name: Install
+        run: npm ci
       - name: Build only the core package
         run: npm run build --workspace=@ecologits/ecologits.js
       - name: Pack core without publishing
@@ -86,9 +86,9 @@ jobs:
           ref: ${{ github.sha }}
       - uses: actions/setup-node@v6
         with:
-          node-version: '24'
+          node-version: "24"
           check-latest: true
-          registry-url: 'https://registry.npmjs.org/'
+          registry-url: "https://registry.npmjs.org/"
           package-manager-cache: false
       - name: Install publishing CLI
         run: npm install --global npm@12.2.0
