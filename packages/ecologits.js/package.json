@@ -3,6 +3,7 @@
     "version": "3.0.0",
     "description": "Core library for the Ecologits project, port of the ecologits methodology to TypeScript",
     "type": "module",
+    "sideEffects": false,
     "main": "./dist/index.cjs",
     "module": "./dist/index.js",
     "types": "./dist/index.d.ts",
@@ -16,7 +17,8 @@
                 "types": "./dist/index.d.cts",
                 "default": "./dist/index.cjs"
             }
-        }
+        },
+        "./package.json": "./package.json"
     },
     "source": "src/index.ts",
     "scripts": {
@@ -39,6 +41,9 @@
         "directory": "packages/ecologits.js"
     },
     "license": "MPL-2.0",
+    "engines": {
+        "node": ">=20"
+    },
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.org/",

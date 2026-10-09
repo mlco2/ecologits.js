@@ -41,9 +41,13 @@ if (impacts.hasErrors) {
     throw new Error("could not estimate impacts");
 }
 
-console.log(impacts.energy?.value, impacts.energy?.unit); // e.g. 0.0004 kWh
-console.log(impacts.gwp?.value, impacts.gwp?.unit); // e.g. 0.002 kgCO2eq
+console.log(impacts.energy?.value, impacts.energy?.unit); // e.g. ~1.2e-5 kWh (a RangeValue)
+console.log(impacts.gwp?.value, impacts.gwp?.unit); // e.g. ~4.9e-6 kgCO2eq (a RangeValue)
 ```
+
+`gpt-4o-mini`'s parameter count is published as an interval, so both values come back as
+`RangeValue`s rather than plain numbers — see [What you get back](#what-you-get-back). The
+figures shown are lower bounds.
 
 Pass `electricityMixZone` to override the default zone (an ISO 3166-1 alpha-3 code, e.g. `FRA`):
 
@@ -126,6 +130,26 @@ if (isRangeValue(impacts.gwp.value)) {
 
 `JSON.stringify` on any result produces the same shape the Python package's `model_dump()`
 returns, so results are portable across the two.
+
+## Logging
+
+Warnings surface through a shared logger. By default it writes to the console — `warning` to
+`console.warn`, `error` to `console.error` — while `debug` and `info` stay silent, and an
+identical message is only emitted once. The `gpt-4o-mini` example above triggers two: its
+architecture is flagged multimodal and not yet released, so the estimate is labelled lower
+precision. The same warnings are also returned on the result as `impacts.warnings`.
+
+Replace the sink to forward them to your own logger, or to silence them entirely:
+
+```ts
+import { logger } from "@ecologits/ecologits.js";
+
+logger.setSink((level, message) => {
+    // your logging framework here, or nothing at all
+});
+```
+
+Pass `null` to restore the default console sink.
 
 ## Data
 
