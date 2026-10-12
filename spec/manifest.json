@@ -1,0 +1,31 @@
+{
+ "specVersion": "0.2.0",
+ "reference": {
+  "implementation": "ecologits",
+  "version": "0.11.2",
+  "commit": "c739e8d61f6a12a85864adb698ab85623fe70f3c",
+  "pythonVersion": "3.10.11"
+ },
+ "vectors": [
+  {
+   "kind": "estimator",
+   "path": "vectors/estimator.json",
+   "contract": "output"
+  },
+  {
+   "kind": "high-level",
+   "path": "vectors/high-level.json",
+   "contract": "output"
+  },
+  {
+   "kind": "repository",
+   "path": "vectors/repository.json",
+   "contract": "output"
+  },
+  {
+   "kind": "status-messages",
+   "path": "vectors/status-messages.json",
+   "contract": "output"
+  }
+ ]
+}

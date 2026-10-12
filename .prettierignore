@@ -1,0 +1,9 @@
+node_modules
+dist
+coverage
+.turbo
+packages/ecologits.js/src/data/*.generated.ts
+packages/ecologits.js/test/vectors
+spec/data
+spec/manifest.json
+spec/vectors

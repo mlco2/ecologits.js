@@ -1,0 +1,2974 @@
+{
+ "kind": "modeling",
+ "additions": [
+  {
+   "left": "Energy",
+   "right": "Energy",
+   "leftValue": 1,
+   "rightValue": 1,
+   "expected": {
+    "type": "energy",
+    "name": "Energy",
+    "value": 2,
+    "unit": "kWh"
+   }
+  },
+  {
+   "left": "Energy",
+   "right": "Energy",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "expected": {
+    "type": "energy",
+    "name": "Energy",
+    "value": 3.5,
+    "unit": "kWh"
+   }
+  },
+  {
+   "left": "Energy",
+   "right": "Energy",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "expected": {
+    "type": "energy",
+    "name": "Energy",
+    "value": {
+     "min": 2,
+     "max": 3
+    },
+    "unit": "kWh"
+   }
+  },
+  {
+   "left": "Energy",
+   "right": "Energy",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "expected": {
+    "type": "energy",
+    "name": "Energy",
+    "value": 3.5,
+    "unit": "kWh"
+   }
+  },
+  {
+   "left": "Energy",
+   "right": "Energy",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "expected": {
+    "type": "energy",
+    "name": "Energy",
+    "value": 5.0,
+    "unit": "kWh"
+   }
+  },
+  {
+   "left": "Energy",
+   "right": "Energy",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "expected": {
+    "type": "energy",
+    "name": "Energy",
+    "value": {
+     "min": 3.5,
+     "max": 4.5
+    },
+    "unit": "kWh"
+   }
+  },
+  {
+   "left": "Energy",
+   "right": "Energy",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "expected": {
+    "type": "energy",
+    "name": "Energy",
+    "value": {
+     "min": 2,
+     "max": 3
+    },
+    "unit": "kWh"
+   }
+  },
+  {
+   "left": "Energy",
+   "right": "Energy",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "expected": {
+    "type": "energy",
+    "name": "Energy",
+    "value": {
+     "min": 3.5,
+     "max": 4.5
+    },
+    "unit": "kWh"
+   }
+  },
+  {
+   "left": "Energy",
+   "right": "Energy",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "expected": {
+    "type": "energy",
+    "name": "Energy",
+    "value": {
+     "min": 2,
+     "max": 4
+    },
+    "unit": "kWh"
+   }
+  },
+  {
+   "left": "Energy",
+   "right": "GWP",
+   "leftValue": 1,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "GWP",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "GWP",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "GWP",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "GWP",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "GWP",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "GWP",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "GWP",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "GWP",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "ADPe",
+   "leftValue": 1,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "ADPe",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "ADPe",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "ADPe",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "ADPe",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "ADPe",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "ADPe",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "ADPe",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "ADPe",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "PE",
+   "leftValue": 1,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "PE",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "PE",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "PE",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "PE",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "PE",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "PE",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "PE",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "PE",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "WCF",
+   "leftValue": 1,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "WCF",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "WCF",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "WCF",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "WCF",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "WCF",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "WCF",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "WCF",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "WCF",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "Energy",
+   "leftValue": 1,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "Energy",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "Energy",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "Energy",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "Energy",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "Energy",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "Energy",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "Energy",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "Energy",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "GWP",
+   "leftValue": 1,
+   "rightValue": 1,
+   "expected": {
+    "type": "GWP",
+    "name": "Global Warming Potential",
+    "value": 2,
+    "unit": "kgCO2eq"
+   }
+  },
+  {
+   "left": "GWP",
+   "right": "GWP",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "expected": {
+    "type": "GWP",
+    "name": "Global Warming Potential",
+    "value": 3.5,
+    "unit": "kgCO2eq"
+   }
+  },
+  {
+   "left": "GWP",
+   "right": "GWP",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "expected": {
+    "type": "GWP",
+    "name": "Global Warming Potential",
+    "value": {
+     "min": 2,
+     "max": 3
+    },
+    "unit": "kgCO2eq"
+   }
+  },
+  {
+   "left": "GWP",
+   "right": "GWP",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "expected": {
+    "type": "GWP",
+    "name": "Global Warming Potential",
+    "value": 3.5,
+    "unit": "kgCO2eq"
+   }
+  },
+  {
+   "left": "GWP",
+   "right": "GWP",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "expected": {
+    "type": "GWP",
+    "name": "Global Warming Potential",
+    "value": 5.0,
+    "unit": "kgCO2eq"
+   }
+  },
+  {
+   "left": "GWP",
+   "right": "GWP",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "expected": {
+    "type": "GWP",
+    "name": "Global Warming Potential",
+    "value": {
+     "min": 3.5,
+     "max": 4.5
+    },
+    "unit": "kgCO2eq"
+   }
+  },
+  {
+   "left": "GWP",
+   "right": "GWP",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "expected": {
+    "type": "GWP",
+    "name": "Global Warming Potential",
+    "value": {
+     "min": 2,
+     "max": 3
+    },
+    "unit": "kgCO2eq"
+   }
+  },
+  {
+   "left": "GWP",
+   "right": "GWP",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "expected": {
+    "type": "GWP",
+    "name": "Global Warming Potential",
+    "value": {
+     "min": 3.5,
+     "max": 4.5
+    },
+    "unit": "kgCO2eq"
+   }
+  },
+  {
+   "left": "GWP",
+   "right": "GWP",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "expected": {
+    "type": "GWP",
+    "name": "Global Warming Potential",
+    "value": {
+     "min": 2,
+     "max": 4
+    },
+    "unit": "kgCO2eq"
+   }
+  },
+  {
+   "left": "GWP",
+   "right": "ADPe",
+   "leftValue": 1,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "ADPe",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "ADPe",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "ADPe",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "ADPe",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "ADPe",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "ADPe",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "ADPe",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "ADPe",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "PE",
+   "leftValue": 1,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "PE",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "PE",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "PE",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "PE",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "PE",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "PE",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "PE",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "PE",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "WCF",
+   "leftValue": 1,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "WCF",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "WCF",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "WCF",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "WCF",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "WCF",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "WCF",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "WCF",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "WCF",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "Energy",
+   "leftValue": 1,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "Energy",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "Energy",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "Energy",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "Energy",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "Energy",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "Energy",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "Energy",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "Energy",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "GWP",
+   "leftValue": 1,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "GWP",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "GWP",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "GWP",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "GWP",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "GWP",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "GWP",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "GWP",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "GWP",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "ADPe",
+   "leftValue": 1,
+   "rightValue": 1,
+   "expected": {
+    "type": "ADPe",
+    "name": "Abiotic Depletion Potential (elements)",
+    "value": 2,
+    "unit": "kgSbeq"
+   }
+  },
+  {
+   "left": "ADPe",
+   "right": "ADPe",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "expected": {
+    "type": "ADPe",
+    "name": "Abiotic Depletion Potential (elements)",
+    "value": 3.5,
+    "unit": "kgSbeq"
+   }
+  },
+  {
+   "left": "ADPe",
+   "right": "ADPe",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "expected": {
+    "type": "ADPe",
+    "name": "Abiotic Depletion Potential (elements)",
+    "value": {
+     "min": 2,
+     "max": 3
+    },
+    "unit": "kgSbeq"
+   }
+  },
+  {
+   "left": "ADPe",
+   "right": "ADPe",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "expected": {
+    "type": "ADPe",
+    "name": "Abiotic Depletion Potential (elements)",
+    "value": 3.5,
+    "unit": "kgSbeq"
+   }
+  },
+  {
+   "left": "ADPe",
+   "right": "ADPe",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "expected": {
+    "type": "ADPe",
+    "name": "Abiotic Depletion Potential (elements)",
+    "value": 5.0,
+    "unit": "kgSbeq"
+   }
+  },
+  {
+   "left": "ADPe",
+   "right": "ADPe",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "expected": {
+    "type": "ADPe",
+    "name": "Abiotic Depletion Potential (elements)",
+    "value": {
+     "min": 3.5,
+     "max": 4.5
+    },
+    "unit": "kgSbeq"
+   }
+  },
+  {
+   "left": "ADPe",
+   "right": "ADPe",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "expected": {
+    "type": "ADPe",
+    "name": "Abiotic Depletion Potential (elements)",
+    "value": {
+     "min": 2,
+     "max": 3
+    },
+    "unit": "kgSbeq"
+   }
+  },
+  {
+   "left": "ADPe",
+   "right": "ADPe",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "expected": {
+    "type": "ADPe",
+    "name": "Abiotic Depletion Potential (elements)",
+    "value": {
+     "min": 3.5,
+     "max": 4.5
+    },
+    "unit": "kgSbeq"
+   }
+  },
+  {
+   "left": "ADPe",
+   "right": "ADPe",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "expected": {
+    "type": "ADPe",
+    "name": "Abiotic Depletion Potential (elements)",
+    "value": {
+     "min": 2,
+     "max": 4
+    },
+    "unit": "kgSbeq"
+   }
+  },
+  {
+   "left": "ADPe",
+   "right": "PE",
+   "leftValue": 1,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "PE",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "PE",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "PE",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "PE",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "PE",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "PE",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "PE",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "PE",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "WCF",
+   "leftValue": 1,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "WCF",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "WCF",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "WCF",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "WCF",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "WCF",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "WCF",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "WCF",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "WCF",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "Energy",
+   "leftValue": 1,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "Energy",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "Energy",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "Energy",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "Energy",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "Energy",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "Energy",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "Energy",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "Energy",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "GWP",
+   "leftValue": 1,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "GWP",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "GWP",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "GWP",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "GWP",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "GWP",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "GWP",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "GWP",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "GWP",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "ADPe",
+   "leftValue": 1,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "ADPe",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "ADPe",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "ADPe",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "ADPe",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "ADPe",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "ADPe",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "ADPe",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "ADPe",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "PE",
+   "leftValue": 1,
+   "rightValue": 1,
+   "expected": {
+    "type": "PE",
+    "name": "Primary Energy",
+    "value": 2,
+    "unit": "MJ"
+   }
+  },
+  {
+   "left": "PE",
+   "right": "PE",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "expected": {
+    "type": "PE",
+    "name": "Primary Energy",
+    "value": 3.5,
+    "unit": "MJ"
+   }
+  },
+  {
+   "left": "PE",
+   "right": "PE",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "expected": {
+    "type": "PE",
+    "name": "Primary Energy",
+    "value": {
+     "min": 2,
+     "max": 3
+    },
+    "unit": "MJ"
+   }
+  },
+  {
+   "left": "PE",
+   "right": "PE",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "expected": {
+    "type": "PE",
+    "name": "Primary Energy",
+    "value": 3.5,
+    "unit": "MJ"
+   }
+  },
+  {
+   "left": "PE",
+   "right": "PE",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "expected": {
+    "type": "PE",
+    "name": "Primary Energy",
+    "value": 5.0,
+    "unit": "MJ"
+   }
+  },
+  {
+   "left": "PE",
+   "right": "PE",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "expected": {
+    "type": "PE",
+    "name": "Primary Energy",
+    "value": {
+     "min": 3.5,
+     "max": 4.5
+    },
+    "unit": "MJ"
+   }
+  },
+  {
+   "left": "PE",
+   "right": "PE",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "expected": {
+    "type": "PE",
+    "name": "Primary Energy",
+    "value": {
+     "min": 2,
+     "max": 3
+    },
+    "unit": "MJ"
+   }
+  },
+  {
+   "left": "PE",
+   "right": "PE",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "expected": {
+    "type": "PE",
+    "name": "Primary Energy",
+    "value": {
+     "min": 3.5,
+     "max": 4.5
+    },
+    "unit": "MJ"
+   }
+  },
+  {
+   "left": "PE",
+   "right": "PE",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "expected": {
+    "type": "PE",
+    "name": "Primary Energy",
+    "value": {
+     "min": 2,
+     "max": 4
+    },
+    "unit": "MJ"
+   }
+  },
+  {
+   "left": "PE",
+   "right": "WCF",
+   "leftValue": 1,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "WCF",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "WCF",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "WCF",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "WCF",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "WCF",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "WCF",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "WCF",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "WCF",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "Energy",
+   "leftValue": 1,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "Energy",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "Energy",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "Energy",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "Energy",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "Energy",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "Energy",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "Energy",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "Energy",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "GWP",
+   "leftValue": 1,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "GWP",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "GWP",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "GWP",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "GWP",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "GWP",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "GWP",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "GWP",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "GWP",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "ADPe",
+   "leftValue": 1,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "ADPe",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "ADPe",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "ADPe",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "ADPe",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "ADPe",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "ADPe",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "ADPe",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "ADPe",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "PE",
+   "leftValue": 1,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "PE",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "PE",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "PE",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "PE",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "PE",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "PE",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "PE",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "PE",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "WCF",
+   "leftValue": 1,
+   "rightValue": 1,
+   "expected": {
+    "type": "WCF",
+    "name": "Water Consumption Footprint",
+    "value": 2,
+    "unit": "L"
+   }
+  },
+  {
+   "left": "WCF",
+   "right": "WCF",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "expected": {
+    "type": "WCF",
+    "name": "Water Consumption Footprint",
+    "value": 3.5,
+    "unit": "L"
+   }
+  },
+  {
+   "left": "WCF",
+   "right": "WCF",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "expected": {
+    "type": "WCF",
+    "name": "Water Consumption Footprint",
+    "value": {
+     "min": 2,
+     "max": 3
+    },
+    "unit": "L"
+   }
+  },
+  {
+   "left": "WCF",
+   "right": "WCF",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "expected": {
+    "type": "WCF",
+    "name": "Water Consumption Footprint",
+    "value": 3.5,
+    "unit": "L"
+   }
+  },
+  {
+   "left": "WCF",
+   "right": "WCF",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "expected": {
+    "type": "WCF",
+    "name": "Water Consumption Footprint",
+    "value": 5.0,
+    "unit": "L"
+   }
+  },
+  {
+   "left": "WCF",
+   "right": "WCF",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "expected": {
+    "type": "WCF",
+    "name": "Water Consumption Footprint",
+    "value": {
+     "min": 3.5,
+     "max": 4.5
+    },
+    "unit": "L"
+   }
+  },
+  {
+   "left": "WCF",
+   "right": "WCF",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "expected": {
+    "type": "WCF",
+    "name": "Water Consumption Footprint",
+    "value": {
+     "min": 2,
+     "max": 3
+    },
+    "unit": "L"
+   }
+  },
+  {
+   "left": "WCF",
+   "right": "WCF",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "expected": {
+    "type": "WCF",
+    "name": "Water Consumption Footprint",
+    "value": {
+     "min": 3.5,
+     "max": 4.5
+    },
+    "unit": "L"
+   }
+  },
+  {
+   "left": "WCF",
+   "right": "WCF",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "expected": {
+    "type": "WCF",
+    "name": "Water Consumption Footprint",
+    "value": {
+     "min": 2,
+     "max": 4
+    },
+    "unit": "L"
+   }
+  }
+ ],
+ "comparisons": [
+  {
+   "type": "Energy",
+   "leftValue": 1,
+   "rightValue": 1,
+   "eq": true,
+   "lte": true,
+   "lt": false,
+   "gte": true,
+   "gt": false
+  },
+  {
+   "type": "Energy",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "eq": false,
+   "lte": true,
+   "lt": true,
+   "gte": false,
+   "gt": false
+  },
+  {
+   "type": "Energy",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "eq": false,
+   "lte": true,
+   "lt": true,
+   "gte": false,
+   "gt": false
+  },
+  {
+   "type": "Energy",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "eq": false,
+   "lte": false,
+   "lt": false,
+   "gte": true,
+   "gt": true
+  },
+  {
+   "type": "Energy",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "eq": true,
+   "lte": true,
+   "lt": false,
+   "gte": true,
+   "gt": false
+  },
+  {
+   "type": "Energy",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "eq": false,
+   "lte": false,
+   "lt": false,
+   "gte": true,
+   "gt": true
+  },
+  {
+   "type": "Energy",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "eq": false,
+   "lte": false,
+   "lt": false,
+   "gte": true,
+   "gt": true
+  },
+  {
+   "type": "Energy",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "eq": false,
+   "lte": true,
+   "lt": true,
+   "gte": false,
+   "gt": false
+  },
+  {
+   "type": "Energy",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "eq": true,
+   "lte": true,
+   "lt": false,
+   "gte": true,
+   "gt": false
+  },
+  {
+   "type": "GWP",
+   "leftValue": 1,
+   "rightValue": 1,
+   "eq": true,
+   "lte": true,
+   "lt": false,
+   "gte": true,
+   "gt": false
+  },
+  {
+   "type": "GWP",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "eq": false,
+   "lte": true,
+   "lt": true,
+   "gte": false,
+   "gt": false
+  },
+  {
+   "type": "GWP",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "eq": false,
+   "lte": true,
+   "lt": true,
+   "gte": false,
+   "gt": false
+  },
+  {
+   "type": "GWP",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "eq": false,
+   "lte": false,
+   "lt": false,
+   "gte": true,
+   "gt": true
+  },
+  {
+   "type": "GWP",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "eq": true,
+   "lte": true,
+   "lt": false,
+   "gte": true,
+   "gt": false
+  },
+  {
+   "type": "GWP",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "eq": false,
+   "lte": false,
+   "lt": false,
+   "gte": true,
+   "gt": true
+  },
+  {
+   "type": "GWP",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "eq": false,
+   "lte": false,
+   "lt": false,
+   "gte": true,
+   "gt": true
+  },
+  {
+   "type": "GWP",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "eq": false,
+   "lte": true,
+   "lt": true,
+   "gte": false,
+   "gt": false
+  },
+  {
+   "type": "GWP",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "eq": true,
+   "lte": true,
+   "lt": false,
+   "gte": true,
+   "gt": false
+  },
+  {
+   "type": "ADPe",
+   "leftValue": 1,
+   "rightValue": 1,
+   "eq": true,
+   "lte": true,
+   "lt": false,
+   "gte": true,
+   "gt": false
+  },
+  {
+   "type": "ADPe",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "eq": false,
+   "lte": true,
+   "lt": true,
+   "gte": false,
+   "gt": false
+  },
+  {
+   "type": "ADPe",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "eq": false,
+   "lte": true,
+   "lt": true,
+   "gte": false,
+   "gt": false
+  },
+  {
+   "type": "ADPe",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "eq": false,
+   "lte": false,
+   "lt": false,
+   "gte": true,
+   "gt": true
+  },
+  {
+   "type": "ADPe",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "eq": true,
+   "lte": true,
+   "lt": false,
+   "gte": true,
+   "gt": false
+  },
+  {
+   "type": "ADPe",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "eq": false,
+   "lte": false,
+   "lt": false,
+   "gte": true,
+   "gt": true
+  },
+  {
+   "type": "ADPe",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "eq": false,
+   "lte": false,
+   "lt": false,
+   "gte": true,
+   "gt": true
+  },
+  {
+   "type": "ADPe",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "eq": false,
+   "lte": true,
+   "lt": true,
+   "gte": false,
+   "gt": false
+  },
+  {
+   "type": "ADPe",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "eq": true,
+   "lte": true,
+   "lt": false,
+   "gte": true,
+   "gt": false
+  },
+  {
+   "type": "PE",
+   "leftValue": 1,
+   "rightValue": 1,
+   "eq": true,
+   "lte": true,
+   "lt": false,
+   "gte": true,
+   "gt": false
+  },
+  {
+   "type": "PE",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "eq": false,
+   "lte": true,
+   "lt": true,
+   "gte": false,
+   "gt": false
+  },
+  {
+   "type": "PE",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "eq": false,
+   "lte": true,
+   "lt": true,
+   "gte": false,
+   "gt": false
+  },
+  {
+   "type": "PE",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "eq": false,
+   "lte": false,
+   "lt": false,
+   "gte": true,
+   "gt": true
+  },
+  {
+   "type": "PE",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "eq": true,
+   "lte": true,
+   "lt": false,
+   "gte": true,
+   "gt": false
+  },
+  {
+   "type": "PE",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "eq": false,
+   "lte": false,
+   "lt": false,
+   "gte": true,
+   "gt": true
+  },
+  {
+   "type": "PE",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "eq": false,
+   "lte": false,
+   "lt": false,
+   "gte": true,
+   "gt": true
+  },
+  {
+   "type": "PE",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "eq": false,
+   "lte": true,
+   "lt": true,
+   "gte": false,
+   "gt": false
+  },
+  {
+   "type": "PE",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "eq": true,
+   "lte": true,
+   "lt": false,
+   "gte": true,
+   "gt": false
+  },
+  {
+   "type": "WCF",
+   "leftValue": 1,
+   "rightValue": 1,
+   "eq": true,
+   "lte": true,
+   "lt": false,
+   "gte": true,
+   "gt": false
+  },
+  {
+   "type": "WCF",
+   "leftValue": 1,
+   "rightValue": 2.5,
+   "eq": false,
+   "lte": true,
+   "lt": true,
+   "gte": false,
+   "gt": false
+  },
+  {
+   "type": "WCF",
+   "leftValue": 1,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "eq": false,
+   "lte": true,
+   "lt": true,
+   "gte": false,
+   "gt": false
+  },
+  {
+   "type": "WCF",
+   "leftValue": 2.5,
+   "rightValue": 1,
+   "eq": false,
+   "lte": false,
+   "lt": false,
+   "gte": true,
+   "gt": true
+  },
+  {
+   "type": "WCF",
+   "leftValue": 2.5,
+   "rightValue": 2.5,
+   "eq": true,
+   "lte": true,
+   "lt": false,
+   "gte": true,
+   "gt": false
+  },
+  {
+   "type": "WCF",
+   "leftValue": 2.5,
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "eq": false,
+   "lte": false,
+   "lt": false,
+   "gte": true,
+   "gt": true
+  },
+  {
+   "type": "WCF",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 1,
+   "eq": false,
+   "lte": false,
+   "lt": false,
+   "gte": true,
+   "gt": true
+  },
+  {
+   "type": "WCF",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": 2.5,
+   "eq": false,
+   "lte": true,
+   "lt": true,
+   "gte": false,
+   "gt": false
+  },
+  {
+   "type": "WCF",
+   "leftValue": {
+    "min": 1,
+    "max": 2
+   },
+   "rightValue": {
+    "min": 1,
+    "max": 2
+   },
+   "eq": true,
+   "lte": true,
+   "lt": false,
+   "gte": true,
+   "gt": false
+  }
+ ],
+ "crossType": [
+  {
+   "left": "Energy",
+   "right": "GWP",
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "ADPe",
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "PE",
+   "error": "ModelingError"
+  },
+  {
+   "left": "Energy",
+   "right": "WCF",
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "Energy",
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "ADPe",
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "PE",
+   "error": "ModelingError"
+  },
+  {
+   "left": "GWP",
+   "right": "WCF",
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "Energy",
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "GWP",
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "PE",
+   "error": "ModelingError"
+  },
+  {
+   "left": "ADPe",
+   "right": "WCF",
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "Energy",
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "GWP",
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "ADPe",
+   "error": "ModelingError"
+  },
+  {
+   "left": "PE",
+   "right": "WCF",
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "Energy",
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "GWP",
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "ADPe",
+   "error": "ModelingError"
+  },
+  {
+   "left": "WCF",
+   "right": "PE",
+   "error": "ModelingError"
+  }
+ ]
+}

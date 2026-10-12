@@ -1,0 +1,8010 @@
+{
+ "kind": "repository",
+ "models": [
+  {
+   "provider": "cohere",
+   "name": "c4ai-aya-expanse-32b",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 32.3
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "cohere",
+   "name": "c4ai-aya-vision-32b",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 33.1
+   },
+   "warningCodes": [
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "cohere",
+   "name": "command-a-03-2025",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 111
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": 63.0,
+    "ttft": 0.95
+   }
+  },
+  {
+   "provider": "cohere",
+   "name": "command-a-plus-05-2026",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 218,
+    "active": 25
+   },
+   "warningCodes": [
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 139.5,
+    "ttft": 0.23
+   }
+  },
+  {
+   "provider": "cohere",
+   "name": "command-a-reasoning-08-2025",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 111
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "cohere",
+   "name": "command-a-translate-08-2025",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 111
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "cohere",
+   "name": "command-a-vision-07-2025",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 112
+   },
+   "warningCodes": [
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "cohere",
+   "name": "command-r-08-2024",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 32.3
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": 23.5,
+    "ttft": 0.32
+   }
+  },
+  {
+   "provider": "cohere",
+   "name": "command-r-plus-08-2024",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 104
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": 8.0,
+    "ttft": 0.65
+   }
+  },
+  {
+   "provider": "cohere",
+   "name": "command-r7b-12-2024",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 8.03
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": 49.0,
+    "ttft": 0.35
+   }
+  },
+  {
+   "provider": "cohere",
+   "name": "command-r7b-arabic-02-2025",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 8.03
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "databricks/dolly-v1-6b",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 6.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "databricks/dolly-v2-12b",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 12.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "databricks/dolly-v2-7b",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "databricks/dolly-v2-3b",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 3.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "databricks/dbrx-base",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 132,
+    "active": 36
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "databricks/dbrx-instruct",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 132,
+    "active": 36
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistralai/Mistral-7B-v0.1",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.24
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistralai/Mistral-7B-Instruct-v0.1",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.24
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistralai/Mixtral-8x7B-v0.1",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 46.7,
+    "active": 12.9
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 46.7,
+    "active": 12.9
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistralai/Mistral-7B-Instruct-v0.2",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.24
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistralai/Mixtral-8x22B-v0.1",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 140.6,
+    "active": 39.1
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 140.6,
+    "active": 39.1
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistralai/Mistral-7B-v0.3",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.25
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistralai/Mistral-7B-Instruct-v0.3",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.25
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistralai/Codestral-22B-v0.1",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 22.25
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistralai/Mathstral-7B-v0.1",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.25
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistralai/Mistral-Nemo-Instruct-2407",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 12.25
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistralai/Mistral-Nemo-Base-2407",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 12.25
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistralai/Mistral-Large-Instruct-2407",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 122.61
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistral-community/Mistral-7B-v0.2",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.24
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistral-community/Mixtral-8x22B-v0.1",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 140.6,
+    "active": 39.1
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistral-community/Mixtral-8x22B-v0.1-original",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 140.6,
+    "active": 39.1
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistral-community/Mixtral-8x22B-v0.1-4bit",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 140.6,
+    "active": 39.1
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistral-community/Mixtral-8x22B-v0.1-AWQ",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 140.6,
+    "active": 39.1
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistral-community/Mixtral-8x22B-Instruct-v0.1-4bit",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 140.6,
+    "active": 39.1
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistral-community/mixtral-8x22B-Instruct-v0.3-original",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 140.6,
+    "active": 39.1
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistral-community/mixtral-8x22B-v0.3-original",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 140.6,
+    "active": 39.1
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistral-community/mixtral-8x22B-v0.3",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 140.6,
+    "active": 39.1
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistral-community/Mistral-7B-Instruct-v0.3",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.25
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "mistral-community/Codestral-22B-v0.1",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 22.25
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Meta-Llama-3.1-8B",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 8.03
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 8.03
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Meta-Llama-3.1-70B",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 70.55
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 70.55
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Meta-Llama-3.1-405B",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 405.85
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 405.85
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Meta-Llama-3.1-405B-FP8",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 405.87
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Meta-Llama-3.1-405B-Instruct-FP8",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 405.87
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Llama-Guard-3-8B",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 8.03
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Llama-Guard-3-8B-INT8",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 8.03
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Prompt-Guard-86M",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 0.28
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Meta-Llama-3-8B",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 8.03
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Meta-Llama-3-8B-Instruct",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 8.03
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Meta-Llama-3-70B-Instruct",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 70.55
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Meta-Llama-3-70B",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 70.55
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Meta-Llama-Guard-2-8B",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 8.03
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Llama-2-7b-hf",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 6.74
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Llama-2-13b-hf",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 13.02
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Llama-2-70b-hf",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 68.98
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Llama-2-7b-chat-hf",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 6.74
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Llama-2-13b-chat-hf",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 13.02
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Llama-2-70b-chat-hf",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 68.98
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Llama-2-7b",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Llama-2-13b",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 13.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Llama-2-70b",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 70.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Llama-2-7b-chat",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Llama-2-13b-chat",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 13.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/Llama-2-70b-chat",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 70.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/LlamaGuard-7b",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/CodeLlama-7b-hf",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/CodeLlama-13b-hf",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 13.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/CodeLlama-34b-hf",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 34.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/CodeLlama-70b-hf",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 70.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/CodeLlama-7b-Python-hf",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/CodeLlama-34b-Python-hf",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 34.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/CodeLlama-13b-Python-hf",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 13.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/CodeLlama-70b-Python-hf",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 70.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/CodeLlama-7b-Instruct-hf",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/CodeLlama-13b-Instruct-hf",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 13.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/CodeLlama-34b-Instruct-hf",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 34.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "meta-llama/CodeLlama-70b-Instruct-hf",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 70.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "CohereForAI/aya-23-8B",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 8.03
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "CohereForAI/aya-23-35B",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 34.98
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "CohereForAI/c4ai-command-r-plus",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 103.81
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "CohereForAI/c4ai-command-r-plus-4bit",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 55.05
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "CohereForAI/c4ai-command-r-v01",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 34.98
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "CohereForAI/c4ai-command-r-v01-4bit",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 19.05
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2-2b",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.61
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2-2b-it",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.61
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2-9b",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 9.24
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2-9b-it",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 9.24
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2-27b",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 27.23
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2-27b-it",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 27.23
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2-2b-pytorch",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2-2b-it-pytorch",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2-9b-pytorch",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 9.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2-9b-it-pytorch",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 9.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2-27b-pytorch",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 27.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2-27b-it-pytorch",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 27.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2-9b-keras",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 9.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2-instruct-9b-keras",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 9.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/codegemma-2b",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.51
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/codegemma-7b",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 8.54
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/codegemma-7b-it",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 8.54
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/codegemma-7b-it-GGUF",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/codegemma-2b-GGUF",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/codegemma-7b-GGUF",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/codegemma-7b-pytorch",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/codegemma-2b-pytorch",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/codegemma-7b-it-pytorch",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/codegemma-2b-keras",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/codegemma-7b-keras",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/codegemma-7b-it-keras",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/codegemma-1.1-7b-it",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 8.54
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/codegemma-1.1-2b",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.51
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/codegemma-1.1-2b-pytorch",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/codegemma-1.1-7b-it-pytorch",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/codegemma-1.1-2b-GGUF",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/codegemma-1.1-7b-it-GGUF",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-1.1-2b-it",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.51
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-1.1-7b-it",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 8.54
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-1.1-7b-it-GGUF",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-1.1-2b-it-GGUF",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-1.1-2b-it-pytorch",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-1.1-7b-it-pytorch",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-7b",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 8.54
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-7b-it",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 8.54
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2b",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.51
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2b-it",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.51
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-7b-it-GGUF",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-7b-GGUF",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2b-GGUF",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2b-it-GGUF",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-7b-it-pytorch",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-7b-pytorch",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2b-pytorch",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-7b-quant-pytorch",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-7b-it-quant-pytorch",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2b-it-pytorch",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-7b-flax",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-7b-it-flax",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2b-flax",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2b-it-flax",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2b-it-keras",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-7b-keras",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2b-keras",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-7b-it-keras",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2b-sfp-cpp",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2b-it-cpp",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-7b-sfp-cpp",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-7b-cpp",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-7b-it-cpp",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-7b-it-sfp-cpp",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2b-it-sfp-cpp",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2b-cpp",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-1.1-2b-it-keras",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-1.1-7b-it-keras",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-1.1-2b-it-tflite",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "google/gemma-2b-it-tflite",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 2.0
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/phi-1",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 1.42
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/phi-1_5",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 1.42
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/Phi-3-mini-4k-instruct",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 3.82
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/Phi-3-mini-128k-instruct",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 3.82
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/Phi-3-small-8k-instruct",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.39
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/Phi-3-small-128k-instruct",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.39
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/Phi-3-medium-4k-instruct",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 13.96
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/Phi-3-medium-128k-instruct",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 13.96
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/Phi-3-vision-128k-instruct",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 4.15
+   },
+   "warningCodes": [
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/Phi-3-mini-4k-instruct-onnx",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 3.82
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/Phi-3-mini-4k-instruct-onnx-web",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 3.82
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/Phi-3-mini-128k-instruct-onnx",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 3.82
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/Phi-3-small-8k-instruct-onnx-cuda",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.39
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/Phi-3-small-128k-instruct-onnx-cuda",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 7.39
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/Phi-3-medium-4k-instruct-onnx-cpu",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 13.96
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/Phi-3-medium-4k-instruct-onnx-cuda",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 13.96
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/Phi-3-medium-4k-instruct-onnx-directml",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 13.96
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/Phi-3-medium-128k-instruct-onnx-cpu",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 13.96
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/Phi-3-medium-128k-instruct-onnx-cuda",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 13.96
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/Phi-3-medium-128k-instruct-onnx-directml",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 13.96
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/Phi-3-vision-128k-instruct-onnx-cpu",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 4.15
+   },
+   "warningCodes": [
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/Phi-3-vision-128k-instruct-onnx-cuda",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 4.15
+   },
+   "warningCodes": [
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/Phi-3-vision-128k-instruct-onnx-directml",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 4.15
+   },
+   "warningCodes": [
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "microsoft/Phi-3-mini-4k-instruct-gguf",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 3.82
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "openai/gpt-oss-120b",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 117,
+    "active": 5.1
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "huggingface_hub",
+   "name": "openai/gpt-oss-20b",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 21,
+    "active": 3.6
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "codestral-2508",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 22.2
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": 44.5,
+    "ttft": 0.31
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "codestral-latest",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 22.2
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "glm-5-2",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 744,
+    "active": 40
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": 57.5,
+    "ttft": 0.64
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "labs-leanstral-1-5",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 119,
+    "active": 6.5
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "labs-leanstral-1-5-1",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 119,
+    "active": 6.5
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "magistral-medium-latest",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 70,
+     "max": 120
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "magistral-small-latest",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 23.6
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "ministral-14b-2512",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 14
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": 24.5,
+    "ttft": 0.6
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "ministral-14b-latest",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 14
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "ministral-3b-2512",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 3.32
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": 33.0,
+    "ttft": 0.36
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "ministral-3b-latest",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 3.32
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "ministral-8b-2512",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 8.02
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": 42.5,
+    "ttft": 0.34
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "ministral-8b-latest",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 8.02
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "mistral-code-fim-latest",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 22.2
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "mistral-large-2512",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 675,
+    "active": 41
+   },
+   "warningCodes": [
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 16.0,
+    "ttft": 0.64
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "mistral-large-latest",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 675,
+    "active": 41
+   },
+   "warningCodes": [
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 42.5,
+    "ttft": 0.64
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "mistral-medium",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 70,
+     "max": 120
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "mistral-medium-2604",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 128
+   },
+   "warningCodes": [
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "mistral-medium-3",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 128
+   },
+   "warningCodes": [
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 103.2,
+    "ttft": 0.36
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "mistral-medium-3-5",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 128
+   },
+   "warningCodes": [
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 27.0,
+    "ttft": 0.36
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "mistral-medium-3.5",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 128
+   },
+   "warningCodes": [
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 27.0,
+    "ttft": 0.36
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "mistral-medium-latest",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 70,
+     "max": 120
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "mistral-small-2603",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 119,
+    "active": 8
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": 94.2,
+    "ttft": 0.39
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "mistral-small-latest",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 119,
+    "active": 8
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "voxtral-mini-2602",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 4.68
+   },
+   "warningCodes": [
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "voxtral-mini-latest",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 4.68
+   },
+   "warningCodes": [
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "voxtral-small-2507",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 24.3
+   },
+   "warningCodes": [
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "voxtral-small-latest",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 24.3
+   },
+   "warningCodes": [
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "zai-glm-5",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 744,
+    "active": 40
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "zai-glm-5-2",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 744,
+    "active": 40
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "zai-glm-5-3",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 744,
+    "active": 40
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "mistralai",
+   "name": "zai-glm-latest",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 744,
+    "active": 40
+   },
+   "warningCodes": [],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "anthropic",
+   "name": "claude-fable-5",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 1340,
+    "active": {
+     "min": 134,
+     "max": 400
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 42.0,
+    "ttft": 3.52
+   }
+  },
+  {
+   "provider": "anthropic",
+   "name": "claude-fable-5-1",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 1340,
+    "active": {
+     "min": 134,
+     "max": 400
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 53.0,
+    "ttft": 5.96
+   }
+  },
+  {
+   "provider": "anthropic",
+   "name": "claude-haiku-4-5-20251001",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 10,
+     "max": 35
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": 60.0,
+    "ttft": 0.61
+   }
+  },
+  {
+   "provider": "anthropic",
+   "name": "claude-opus-4-5-20251101",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 670,
+    "active": {
+     "min": 67,
+     "max": 200
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": 33.0,
+    "ttft": 1.24
+   }
+  },
+  {
+   "provider": "anthropic",
+   "name": "claude-opus-4-6",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 670,
+    "active": {
+     "min": 67,
+     "max": 200
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": 36.0,
+    "ttft": 1.69
+   }
+  },
+  {
+   "provider": "anthropic",
+   "name": "claude-opus-4-7",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 670,
+    "active": {
+     "min": 67,
+     "max": 200
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": 53.0,
+    "ttft": 1.35
+   }
+  },
+  {
+   "provider": "anthropic",
+   "name": "claude-opus-4-8",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 670,
+    "active": {
+     "min": 67,
+     "max": 200
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": 108.5,
+    "ttft": 1.01
+   }
+  },
+  {
+   "provider": "anthropic",
+   "name": "claude-opus-5",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 670,
+    "active": {
+     "min": 67,
+     "max": 200
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 20.5,
+    "ttft": 1.96
+   }
+  },
+  {
+   "provider": "anthropic",
+   "name": "claude-opus-5-5",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 670,
+    "active": {
+     "min": 70,
+     "max": 200
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 75.5,
+    "ttft": 3.43
+   }
+  },
+  {
+   "provider": "anthropic",
+   "name": "claude-sonnet-4-5-20250929",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 440,
+    "active": {
+     "min": 44,
+     "max": 132
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": 44.0,
+    "ttft": 1.18
+   }
+  },
+  {
+   "provider": "anthropic",
+   "name": "claude-sonnet-4-6",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 440,
+    "active": {
+     "min": 44,
+     "max": 132
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": 39.0,
+    "ttft": 1.37
+   }
+  },
+  {
+   "provider": "anthropic",
+   "name": "claude-sonnet-5",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 293,
+    "active": {
+     "min": 29,
+     "max": 88
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 16.0,
+    "ttft": 1.13
+   }
+  },
+  {
+   "provider": "anthropic",
+   "name": "claude-sonnet-5-5",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 293,
+    "active": {
+     "min": 29,
+     "max": 88
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 91.0,
+    "ttft": 3.35
+   }
+  },
+  {
+   "provider": "google_genai",
+   "name": "gemini-2.5-flash",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 440,
+    "active": {
+     "min": 44,
+     "max": 132
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 70.5,
+    "ttft": 0.87
+   }
+  },
+  {
+   "provider": "google_genai",
+   "name": "gemini-2.5-flash-image",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 440,
+    "active": {
+     "min": 44,
+     "max": 132
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": 13.48
+   }
+  },
+  {
+   "provider": "google_genai",
+   "name": "gemini-2.5-flash-lite",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 8,
+     "max": 28
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 87.5,
+    "ttft": 0.78
+   }
+  },
+  {
+   "provider": "google_genai",
+   "name": "gemini-2.5-pro",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 2000,
+    "active": {
+     "min": 200,
+     "max": 600
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 88.0,
+    "ttft": 2.45
+   }
+  },
+  {
+   "provider": "google_genai",
+   "name": "gemini-3-flash-preview",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 300,
+    "active": {
+     "min": 100,
+     "max": 300
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 67.0,
+    "ttft": 2.04
+   }
+  },
+  {
+   "provider": "google_genai",
+   "name": "gemini-3-pro-image-preview",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 1200,
+    "active": {
+     "min": 120,
+     "max": 360
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "google_genai",
+   "name": "gemini-3.1-flash-image-preview",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 1200,
+    "active": {
+     "min": 120,
+     "max": 360
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "google_genai",
+   "name": "gemini-3.1-flash-lite",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 30,
+     "max": 105
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 36.0,
+    "ttft": 1.02
+   }
+  },
+  {
+   "provider": "google_genai",
+   "name": "gemini-3.1-flash-lite-preview",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 30,
+     "max": 105
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "google_genai",
+   "name": "gemini-3.1-pro-preview",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 1200,
+    "active": {
+     "min": 120,
+     "max": 360
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 56.0,
+    "ttft": 48.34
+   }
+  },
+  {
+   "provider": "google_genai",
+   "name": "gemini-3.1-pro-preview-customtools",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 1200,
+    "active": {
+     "min": 120,
+     "max": 360
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "google_genai",
+   "name": "gemini-3.5-flash",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 900,
+    "active": {
+     "min": 90,
+     "max": 240
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 84.5,
+    "ttft": 1.82
+   }
+  },
+  {
+   "provider": "google_genai",
+   "name": "gemini-3.5-flash-lite",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 30,
+     "max": 105
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 62.0,
+    "ttft": 1.11
+   }
+  },
+  {
+   "provider": "google_genai",
+   "name": "gemini-3.6-flash",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 750,
+    "active": {
+     "min": 75,
+     "max": 200
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 106.0,
+    "ttft": 2.06
+   }
+  },
+  {
+   "provider": "google_genai",
+   "name": "gemini-3.7-flash",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 750,
+    "active": {
+     "min": 75,
+     "max": 200
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 86.0,
+    "ttft": 2.39
+   }
+  },
+  {
+   "provider": "google_genai",
+   "name": "gemini-3.8-flash",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 750,
+    "active": {
+     "min": 75,
+     "max": 200
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 37.0,
+    "ttft": 2.64
+   }
+  },
+  {
+   "provider": "google_genai",
+   "name": "gemini-flash-latest",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 440,
+    "active": {
+     "min": 44,
+     "max": 132
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "google_genai",
+   "name": "gemini-flash-lite-latest",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 8,
+     "max": 28
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "google_genai",
+   "name": "gemini-pro-latest",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 2000,
+    "active": {
+     "min": 200,
+     "max": 600
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "google_genai",
+   "name": "gemma-4-26b-a4b-it",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 26,
+    "active": 4
+   },
+   "warningCodes": [
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 24.0,
+    "ttft": 0.86
+   }
+  },
+  {
+   "provider": "google_genai",
+   "name": "gemma-4-31b-it",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": 31
+   },
+   "warningCodes": [
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "chat-latest",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 900,
+    "active": {
+     "min": 90,
+     "max": 300
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-3.5-turbo",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 20,
+     "max": 70
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": 20.0,
+    "ttft": 0.67
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-3.5-turbo-0125",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 20,
+     "max": 70
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-3.5-turbo-1106",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 20,
+     "max": 70
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-3.5-turbo-16k",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 20,
+     "max": 70
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": 7.5,
+    "ttft": 1.07
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-3.5-turbo-instruct",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 20,
+     "max": 70
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-3.5-turbo-instruct-0914",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 20,
+     "max": 70
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 1760,
+    "active": {
+     "min": 176,
+     "max": 528
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 38.0,
+    "ttft": 0.92
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4-0613",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 1760,
+    "active": {
+     "min": 176,
+     "max": 528
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4-turbo",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 880,
+    "active": {
+     "min": 88,
+     "max": 264
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 7.5,
+    "ttft": 1.17
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4-turbo-2024-04-09",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 880,
+    "active": {
+     "min": 88,
+     "max": 264
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 7.5,
+    "ttft": 1.17
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4.1",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 352,
+    "active": {
+     "min": 35,
+     "max": 106
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 45.0,
+    "ttft": 0.95
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4.1-2025-04-14",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 352,
+    "active": {
+     "min": 35,
+     "max": 106
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 45.0,
+    "ttft": 0.95
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4.1-mini",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 40,
+     "max": 112
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 49.0,
+    "ttft": 0.95
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4.1-mini-2025-04-14",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 40,
+     "max": 112
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 49.0,
+    "ttft": 0.95
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4.1-nano",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 10,
+     "max": 37
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 69.0,
+    "ttft": 0.97
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4.1-nano-2025-04-14",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 10,
+     "max": 37
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 69.0,
+    "ttft": 0.98
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4o",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 440,
+    "active": {
+     "min": 44,
+     "max": 132
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 41.0,
+    "ttft": 0.65
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4o-2024-05-13",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 440,
+    "active": {
+     "min": 44,
+     "max": 132
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 70.0,
+    "ttft": 1.33
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4o-2024-08-06",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 440,
+    "active": {
+     "min": 44,
+     "max": 132
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 10.0,
+    "ttft": 2.21
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4o-2024-11-20",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 440,
+    "active": {
+     "min": 44,
+     "max": 132
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 34.0,
+    "ttft": 0.86
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4o-mini",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 8,
+     "max": 28
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 58.0,
+    "ttft": 0.53
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4o-mini-2024-07-18",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 8,
+     "max": 28
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 43.0,
+    "ttft": 0.65
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4o-mini-search-preview",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 8,
+     "max": 28
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4o-mini-search-preview-2025-03-11",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 8,
+     "max": 28
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4o-mini-transcribe",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 8,
+     "max": 28
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4o-mini-transcribe-2025-03-20",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 8,
+     "max": 28
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4o-mini-transcribe-2025-12-15",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 8,
+     "max": 28
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4o-mini-tts",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 8,
+     "max": 28
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4o-mini-tts-2025-03-20",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 8,
+     "max": 28
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4o-mini-tts-2025-12-15",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 8,
+     "max": 28
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4o-search-preview",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 440,
+    "active": {
+     "min": 44,
+     "max": 132
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-4o-search-preview-2025-03-11",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 440,
+    "active": {
+     "min": 44,
+     "max": 132
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 300,
+    "active": {
+     "min": 30,
+     "max": 90
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 59.0,
+    "ttft": 3.02
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5-2025-08-07",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 300,
+    "active": {
+     "min": 30,
+     "max": 90
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 59.0,
+    "ttft": 3.02
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5-chat-latest",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 300,
+    "active": {
+     "min": 30,
+     "max": 90
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5-codex",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 300,
+    "active": {
+     "min": 30,
+     "max": 90
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5-mini",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 25,
+     "max": 70
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 76.5,
+    "ttft": 4.57
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5-mini-2025-08-07",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 25,
+     "max": 70
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 76.5,
+    "ttft": 4.57
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5-nano",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 5,
+     "max": 18.5
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 84.5,
+    "ttft": 1.57
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5-nano-2025-08-07",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 5,
+     "max": 18.5
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 84.5,
+    "ttft": 1.57
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5-pro",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 3600,
+    "active": {
+     "min": 360,
+     "max": 1080
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 2.0,
+    "ttft": 17.77
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5-pro-2025-10-06",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 3600,
+    "active": {
+     "min": 360,
+     "max": 1080
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 2.0,
+    "ttft": 17.77
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5-search-api",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 300,
+    "active": {
+     "min": 30,
+     "max": 90
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5-search-api-2025-10-14",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 300,
+    "active": {
+     "min": 30,
+     "max": 90
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.1",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 300,
+    "active": {
+     "min": 30,
+     "max": 90
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 37.8,
+    "ttft": 1.15
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.1-2025-11-13",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 300,
+    "active": {
+     "min": 30,
+     "max": 90
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 37.8,
+    "ttft": 1.15
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.1-chat-latest",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 300,
+    "active": {
+     "min": 30,
+     "max": 90
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.1-codex",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 300,
+    "active": {
+     "min": 30,
+     "max": 90
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.1-codex-max",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 300,
+    "active": {
+     "min": 30,
+     "max": 90
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.1-codex-mini",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 25,
+     "max": 70
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.2",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 420,
+    "active": {
+     "min": 42,
+     "max": 126
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 48.0,
+    "ttft": 3.45
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.2-2025-12-11",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 420,
+    "active": {
+     "min": 42,
+     "max": 126
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 48.0,
+    "ttft": 3.45
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.2-chat-latest",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 420,
+    "active": {
+     "min": 42,
+     "max": 126
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.2-codex",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 420,
+    "active": {
+     "min": 42,
+     "max": 126
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.2-pro",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 5040,
+    "active": {
+     "min": 504,
+     "max": 1512
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 15.0,
+    "ttft": 11.3
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.2-pro-2025-12-11",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 5040,
+    "active": {
+     "min": 504,
+     "max": 1512
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 15.0,
+    "ttft": 11.3
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.3-chat-latest",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 420,
+    "active": {
+     "min": 42,
+     "max": 126
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.3-codex",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 420,
+    "active": {
+     "min": 42,
+     "max": 126
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 32.2,
+    "ttft": 2.11
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.4",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 450,
+    "active": {
+     "min": 45,
+     "max": 150
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 58.0,
+    "ttft": 1.69
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.4-2026-03-05",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 450,
+    "active": {
+     "min": 45,
+     "max": 150
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 58.0,
+    "ttft": 1.69
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.4-mini",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 56,
+     "max": 158
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 71.0,
+    "ttft": 0.8
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.4-mini-2026-03-17",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 56,
+     "max": 158
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 71.0,
+    "ttft": 0.8
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.4-nano",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 15,
+     "max": 58
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 51.2,
+    "ttft": 1.28
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.4-nano-2026-03-17",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 15,
+     "max": 58
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 51.2,
+    "ttft": 1.28
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.4-pro",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 5400,
+    "active": {
+     "min": 540,
+     "max": 1800
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 2.0,
+    "ttft": 5.57
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.4-pro-2026-03-05",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 5400,
+    "active": {
+     "min": 540,
+     "max": 1800
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 2.0,
+    "ttft": 5.57
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.5",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 900,
+    "active": {
+     "min": 90,
+     "max": 300
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 47.0,
+    "ttft": 2.16
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.5-2026-04-23",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 900,
+    "active": {
+     "min": 90,
+     "max": 300
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 47.0,
+    "ttft": 2.16
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.5-pro",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 5400,
+    "active": {
+     "min": 540,
+     "max": 1800
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 5.0,
+    "ttft": 3.45
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.5-pro-2026-04-23",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 5400,
+    "active": {
+     "min": 540,
+     "max": 1800
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 5.0,
+    "ttft": 3.45
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.6-luna",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 180,
+    "active": {
+     "min": 18,
+     "max": 60
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 55.0,
+    "ttft": 1.99
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.6-sol",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 900,
+    "active": {
+     "min": 90,
+     "max": 300
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 44.0,
+    "ttft": 2.98
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-5.6-terra",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 450,
+    "active": {
+     "min": 45,
+     "max": 150
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 52.0,
+    "ttft": 2.26
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-6-astra",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 1500,
+    "active": {
+     "min": 150,
+     "max": 500
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 35.0,
+    "ttft": 4.2
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-6-luna",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 38,
+    "active": {
+     "min": 3.8,
+     "max": 11
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 68.0,
+    "ttft": 2.17
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-6-sol",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 375,
+    "active": {
+     "min": 38,
+     "max": 112
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 60.0,
+    "ttft": 2.04
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-6.1-sol",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 375,
+    "active": {
+     "min": 38,
+     "max": 112
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 46.0,
+    "ttft": 3.45
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "o1",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 440,
+    "active": {
+     "min": 44,
+     "max": 132
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 6.0,
+    "ttft": 1.09
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "o1-2024-12-17",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 440,
+    "active": {
+     "min": 44,
+     "max": 132
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 6.0,
+    "ttft": 1.09
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "o3-mini",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 8,
+     "max": 28
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 92.0,
+    "ttft": 3.06
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "o3-mini-2025-01-31",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 8,
+     "max": 28
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 92.0,
+    "ttft": 3.06
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "o4-mini",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 8,
+     "max": 28
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 92.0,
+    "ttft": 2.93
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "o4-mini-2025-04-16",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 8,
+     "max": 28
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": 92.0,
+    "ttft": 2.93
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "o4-mini-deep-research",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 8,
+     "max": 28
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "o4-mini-deep-research-2025-06-26",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 8,
+     "max": 28
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released",
+    "model-arch-multimodal"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "anthropic",
+   "name": "claude-haiku-4-5",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 10,
+     "max": 35
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": 60.0,
+    "ttft": 0.61
+   }
+  },
+  {
+   "provider": "anthropic",
+   "name": "claude-sonnet-4-5",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 440,
+    "active": {
+     "min": 44,
+     "max": 132
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": 44.0,
+    "ttft": 1.18
+   }
+  },
+  {
+   "provider": "anthropic",
+   "name": "claude-opus-4-5",
+   "architectureType": "moe",
+   "parameters": {
+    "kind": "moe",
+    "total": 670,
+    "active": {
+     "min": 67,
+     "max": 200
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": 33.0,
+    "ttft": 1.24
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-35-turbo",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 20,
+     "max": 70
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": 20.0,
+    "ttft": 0.67
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-35-turbo-0125",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 20,
+     "max": 70
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-35-turbo-1106",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 20,
+     "max": 70
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-35-turbo-16k",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 20,
+     "max": 70
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": 7.5,
+    "ttft": 1.07
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-35-turbo-instruct-0914",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 20,
+     "max": 70
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  },
+  {
+   "provider": "openai",
+   "name": "gpt-35-turbo-instruct",
+   "architectureType": "dense",
+   "parameters": {
+    "kind": "dense",
+    "parameters": {
+     "min": 20,
+     "max": 70
+    }
+   },
+   "warningCodes": [
+    "model-arch-not-released"
+   ],
+   "deployment": {
+    "tps": null,
+    "ttft": null
+   }
+  }
+ ],
+ "electricityMixes": [
+  {
+   "zone": "ABW",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.55,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "AFG",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.13131,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "AGO",
+   "adpe": 1.2407e-07,
+   "pe": 5.0407,
+   "gwp": 0.18538,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "ALB",
+   "adpe": 2.2956e-07,
+   "pe": 0.2005,
+   "gwp": 0.02518,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "ARE",
+   "adpe": 1.415e-08,
+   "pe": 18.9746,
+   "gwp": 0.46751,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "ARG",
+   "adpe": 7.686e-08,
+   "pe": 7.8888,
+   "gwp": 0.346,
+   "wue": 11.4558,
+   "warningCodes": []
+  },
+  {
+   "zone": "ARM",
+   "adpe": 8.542e-08,
+   "pe": 9.0719,
+   "gwp": 0.21193,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "ASM",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.61111,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "ATG",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.5946,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "AUS",
+   "adpe": 7.908e-08,
+   "pe": 12.2247,
+   "gwp": 0.52518,
+   "wue": 4.7293,
+   "warningCodes": []
+  },
+  {
+   "zone": "AUT",
+   "adpe": 1.4112e-07,
+   "pe": 2.8363,
+   "gwp": 0.11691,
+   "wue": 5.7222,
+   "warningCodes": []
+  },
+  {
+   "zone": "AZE",
+   "adpe": 9.257e-08,
+   "pe": 11.7022,
+   "gwp": 0.6319,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "BDI",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.18367,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "BEL",
+   "adpe": 3.372e-08,
+   "pe": 8.9876,
+   "gwp": 0.14982,
+   "wue": 2.6198,
+   "warningCodes": []
+  },
+  {
+   "zone": "BEN",
+   "adpe": 2.397e-08,
+   "pe": 13.8784,
+   "gwp": 0.58416,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "BFA",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.56213,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "BGD",
+   "adpe": 3.942e-08,
+   "pe": 12.702,
+   "gwp": 0.69613,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "BGR",
+   "adpe": 8.236e-08,
+   "pe": 12.118,
+   "gwp": 0.27555,
+   "wue": 4.6228,
+   "warningCodes": []
+  },
+  {
+   "zone": "BHR",
+   "adpe": 1.35e-08,
+   "pe": 14.0361,
+   "gwp": 0.90224,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "BHS",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.65333,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "BIH",
+   "adpe": 1.4801e-07,
+   "pe": 14.868,
+   "gwp": 0.57064,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "BLR",
+   "adpe": 8.405e-08,
+   "pe": 13.0352,
+   "gwp": 0.30925,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "BLZ",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.17021,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "BMU",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.63934,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "BOL",
+   "adpe": 9.698e-08,
+   "pe": 9.2001,
+   "gwp": 0.48129,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "BRA",
+   "adpe": 1.0962e-07,
+   "pe": 1.7701,
+   "gwp": 0.10995,
+   "wue": 18.6033,
+   "warningCodes": []
+  },
+  {
+   "zone": "BRB",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.5946,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "BRN",
+   "adpe": 1.856e-08,
+   "pe": 15.6889,
+   "gwp": 0.89209,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "BTN",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.02364,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "BWA",
+   "adpe": 8.66e-08,
+   "pe": 19.6029,
+   "gwp": 0.85131,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "CAF",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.0,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "CAN",
+   "adpe": 9.932e-08,
+   "pe": 4.1955,
+   "gwp": 0.19072,
+   "wue": 8.1662,
+   "warningCodes": []
+  },
+  {
+   "zone": "CHE",
+   "adpe": 1.0047e-07,
+   "pe": 4.7362,
+   "gwp": 0.03922,
+   "wue": 5.6641,
+   "warningCodes": []
+  },
+  {
+   "zone": "CHL",
+   "adpe": 1.0585e-07,
+   "pe": 6.434,
+   "gwp": 0.28949,
+   "wue": 10.5226,
+   "warningCodes": []
+  },
+  {
+   "zone": "CHN",
+   "adpe": 8.516e-08,
+   "pe": 10.6736,
+   "gwp": 0.52534,
+   "wue": 6.0065,
+   "warningCodes": []
+  },
+  {
+   "zone": "CIV",
+   "adpe": 9.49e-08,
+   "pe": 12.5653,
+   "gwp": 0.40501,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "CMR",
+   "adpe": 1.4631e-07,
+   "pe": 5.1439,
+   "gwp": 0.2259,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "COD",
+   "adpe": 1.7465e-07,
+   "pe": 0.097,
+   "gwp": 0.02764,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "COG",
+   "adpe": 2.6558e-07,
+   "pe": 11.4735,
+   "gwp": 0.71612,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "COK",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.25,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "COL",
+   "adpe": 1.2203e-07,
+   "pe": 2.7127,
+   "gwp": 0.18681,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "COM",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.64286,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "CPV",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.46154,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "CRI",
+   "adpe": 8.639e-08,
+   "pe": 1.0579,
+   "gwp": 0.0242,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "CUB",
+   "adpe": 2.995e-08,
+   "pe": 16.5378,
+   "gwp": 0.64282,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "CYM",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.6338,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "CYP",
+   "adpe": 4.488e-08,
+   "pe": 11.9763,
+   "gwp": 0.489,
+   "wue": 1.2947,
+   "warningCodes": []
+  },
+  {
+   "zone": "CZE",
+   "adpe": 8.176e-08,
+   "pe": 11.103,
+   "gwp": 0.40146,
+   "wue": 3.2133,
+   "warningCodes": []
+  },
+  {
+   "zone": "DEU",
+   "adpe": 8.787e-08,
+   "pe": 8.7477,
+   "gwp": 0.32965,
+   "wue": 1.947,
+   "warningCodes": []
+  },
+  {
+   "zone": "DJI",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.45,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "DMA",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.6,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "DNK",
+   "adpe": 1.574e-08,
+   "pe": 6.6454,
+   "gwp": 0.11441,
+   "wue": 3.1935,
+   "warningCodes": []
+  },
+  {
+   "zone": "DOM",
+   "adpe": 4.293e-08,
+   "pe": 11.121,
+   "gwp": 0.53748,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "DZA",
+   "adpe": 2.164e-08,
+   "pe": 16.2778,
+   "gwp": 0.63294,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "ECU",
+   "adpe": 1.2717e-07,
+   "pe": 8.3213,
+   "gwp": 0.15902,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "EEE",
+   "adpe": 6.423e-08,
+   "pe": 8.5477,
+   "gwp": 0.28268,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "EGY",
+   "adpe": 3.392e-08,
+   "pe": 9.3589,
+   "gwp": 0.56323,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "ERI",
+   "adpe": 5.124e-08,
+   "pe": 13.1822,
+   "gwp": 0.57778,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "ESH",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.66667,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "ESP",
+   "adpe": 5.183e-08,
+   "pe": 7.4839,
+   "gwp": 0.1536,
+   "wue": 6.2088,
+   "warningCodes": []
+  },
+  {
+   "zone": "EST",
+   "adpe": 9.902e-08,
+   "pe": 14.2926,
+   "gwp": 0.31915,
+   "wue": 2.1986,
+   "warningCodes": []
+  },
+  {
+   "zone": "ETH",
+   "adpe": 1.7416e-07,
+   "pe": 2.3125,
+   "gwp": 0.02308,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "FIN",
+   "adpe": 8.051e-08,
+   "pe": 6.2915,
+   "gwp": 0.05747,
+   "wue": 4.5289,
+   "warningCodes": []
+  },
+  {
+   "zone": "FJI",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.27826,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "FLK",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 1.0,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "FRA",
+   "adpe": 4.858e-08,
+   "pe": 9.3135,
+   "gwp": 0.04144,
+   "wue": 3.6737,
+   "warningCodes": []
+  },
+  {
+   "zone": "FRO",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.34694,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "GAB",
+   "adpe": 1.1384e-07,
+   "pe": 8.9556,
+   "gwp": 0.52308,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "GBR",
+   "adpe": 3.71e-08,
+   "pe": 9.0976,
+   "gwp": 0.21741,
+   "wue": 2.329,
+   "warningCodes": []
+  },
+  {
+   "zone": "GEO",
+   "adpe": 1.38e-07,
+   "pe": 2.0119,
+   "gwp": 0.14593,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "GHA",
+   "adpe": 1.56e-07,
+   "pe": 5.7652,
+   "gwp": 0.46889,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "GIB",
+   "adpe": 2.862e-08,
+   "pe": 11.9066,
+   "gwp": 0.59091,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "GIN",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.18114,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "GLP",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.49701,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "GMB",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.66667,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "GNB",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.625,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "GNQ",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.6443,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "GRC",
+   "adpe": 6.916e-08,
+   "pe": 10.5179,
+   "gwp": 0.31509,
+   "wue": 5.1451,
+   "warningCodes": []
+  },
+  {
+   "zone": "GRD",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.66667,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "GRL",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.15,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "GTM",
+   "adpe": 8.033e-08,
+   "pe": 6.9261,
+   "gwp": 0.30146,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "GUF",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.2449,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "GUM",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.60753,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "GUY",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.64493,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "HKG",
+   "adpe": 8.162e-08,
+   "pe": 10.8916,
+   "gwp": 0.67548,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "HND",
+   "adpe": 6.494e-08,
+   "pe": 7.8653,
+   "gwp": 0.32212,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "HRV",
+   "adpe": 1.5399e-07,
+   "pe": 6.4549,
+   "gwp": 0.1585,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "HTI",
+   "adpe": 9.371e-08,
+   "pe": 16.2948,
+   "gwp": 0.53488,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "HUN",
+   "adpe": 6.446e-08,
+   "pe": 10.5942,
+   "gwp": 0.16302,
+   "wue": 3.6874,
+   "warningCodes": []
+  },
+  {
+   "zone": "IDN",
+   "adpe": 6.105e-08,
+   "pe": 9.7582,
+   "gwp": 0.68025,
+   "wue": 2.2554,
+   "warningCodes": []
+  },
+  {
+   "zone": "IND",
+   "adpe": 1.001e-07,
+   "pe": 16.6775,
+   "gwp": 0.67013,
+   "wue": 3.4368,
+   "warningCodes": []
+  },
+  {
+   "zone": "IRL",
+   "adpe": 2.193e-08,
+   "pe": 8.0614,
+   "gwp": 0.25654,
+   "wue": 1.4769,
+   "warningCodes": []
+  },
+  {
+   "zone": "IRN",
+   "adpe": 2.203e-08,
+   "pe": 14.1505,
+   "gwp": 0.65953,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "IRQ",
+   "adpe": 4.043e-08,
+   "pe": 19.0682,
+   "gwp": 0.6831,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "ISL",
+   "adpe": 7.819e-08,
+   "pe": 0.0128,
+   "gwp": 0.02782,
+   "wue": 6.1409,
+   "warningCodes": []
+  },
+  {
+   "zone": "ISR",
+   "adpe": 6.102e-08,
+   "pe": 9.7726,
+   "gwp": 0.49269,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "ITA",
+   "adpe": 5.439e-08,
+   "pe": 7.9351,
+   "gwp": 0.28478,
+   "wue": 4.8374,
+   "warningCodes": []
+  },
+  {
+   "zone": "JAM",
+   "adpe": 1.96e-08,
+   "pe": 13.5858,
+   "gwp": 0.56301,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "JOR",
+   "adpe": 1.47e-08,
+   "pe": 13.0065,
+   "gwp": 0.52979,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "JPN",
+   "adpe": 5.966e-08,
+   "pe": 9.1105,
+   "gwp": 0.47726,
+   "wue": 2.3063,
+   "warningCodes": []
+  },
+  {
+   "zone": "KAZ",
+   "adpe": 1.3539e-07,
+   "pe": 11.7616,
+   "gwp": 0.80532,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "KEN",
+   "adpe": 9.585e-08,
+   "pe": 6.4166,
+   "gwp": 0.09544,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "KGZ",
+   "adpe": 1.8183e-07,
+   "pe": 2.0456,
+   "gwp": 0.15273,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "KHM",
+   "adpe": 3.192e-08,
+   "pe": 18.2978,
+   "gwp": 0.49887,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "KIR",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.5,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "KNA",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.6087,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "KOR",
+   "adpe": 5.18e-08,
+   "pe": 9.9136,
+   "gwp": 0.41706,
+   "wue": 1.8877,
+   "warningCodes": []
+  },
+  {
+   "zone": "KWT",
+   "adpe": 1.412e-08,
+   "pe": 12.7407,
+   "gwp": 0.63531,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "LAO",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.23208,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "LBN",
+   "adpe": 1.821e-08,
+   "pe": 11.995,
+   "gwp": 0.38951,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "LBR",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.31579,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "LBY",
+   "adpe": 2.066e-08,
+   "pe": 19.116,
+   "gwp": 0.82683,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "LCA",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.65,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "LKA",
+   "adpe": 9.869e-08,
+   "pe": 8.7599,
+   "gwp": 0.32928,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "LSO",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.02083,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "LTU",
+   "adpe": 2.946e-08,
+   "pe": 10.6476,
+   "gwp": 0.13836,
+   "wue": 5.8994,
+   "warningCodes": []
+  },
+  {
+   "zone": "LUX",
+   "adpe": 1.0569e-07,
+   "pe": 8.0213,
+   "gwp": 0.12338,
+   "wue": 12.7784,
+   "warningCodes": []
+  },
+  {
+   "zone": "LVA",
+   "adpe": 1.5376e-07,
+   "pe": 3.7781,
+   "gwp": 0.13876,
+   "wue": 2.5526,
+   "warningCodes": []
+  },
+  {
+   "zone": "MAC",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.47436,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "MAR",
+   "adpe": 6.411e-08,
+   "pe": 9.9697,
+   "gwp": 0.5964,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "MDA",
+   "adpe": 1.1067e-07,
+   "pe": 17.4518,
+   "gwp": 0.63312,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "MDG",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.4321,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "MDV",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.61177,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "MEX",
+   "adpe": 5.784e-08,
+   "pe": 9.9732,
+   "gwp": 0.47402,
+   "wue": 5.3047,
+   "warningCodes": []
+  },
+  {
+   "zone": "MKD",
+   "adpe": 1.1987e-07,
+   "pe": 12.1032,
+   "gwp": 0.44135,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "MLI",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.53859,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "MLT",
+   "adpe": 4.948e-08,
+   "pe": 16.3514,
+   "gwp": 0.48402,
+   "wue": 1.1185,
+   "warningCodes": []
+  },
+  {
+   "zone": "MMR",
+   "adpe": 1.527e-07,
+   "pe": 6.6701,
+   "gwp": 0.50299,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "MNE",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.26423,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "MNG",
+   "adpe": 1.7636e-07,
+   "pe": 14.5244,
+   "gwp": 0.81631,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "MOZ",
+   "adpe": 1.4838e-07,
+   "pe": 0.0336,
+   "gwp": 0.12936,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "MRT",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.51208,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "MSR",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 1.0,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "MTQ",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.5298,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "MUS",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.64223,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "MWI",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.05465,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "MYS",
+   "adpe": 4.494e-08,
+   "pe": 10.5875,
+   "gwp": 0.60197,
+   "wue": 1.6778,
+   "warningCodes": []
+  },
+  {
+   "zone": "NAM",
+   "adpe": 1.2828e-07,
+   "pe": 3.277,
+   "gwp": 0.04878,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "NCL",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.5609,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "NER",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.67368,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "NGA",
+   "adpe": 6.21e-08,
+   "pe": 9.1812,
+   "gwp": 0.45571,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "NIC",
+   "adpe": 4.15e-08,
+   "pe": 11.5328,
+   "gwp": 0.30089,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "NLD",
+   "adpe": 3.293e-08,
+   "pe": 7.4815,
+   "gwp": 0.25356,
+   "wue": 3.433,
+   "warningCodes": []
+  },
+  {
+   "zone": "NOR",
+   "adpe": 1.2749e-07,
+   "pe": 0.1386,
+   "gwp": 0.02811,
+   "wue": 6.6633,
+   "warningCodes": []
+  },
+  {
+   "zone": "NPL",
+   "adpe": 2.3827e-07,
+   "pe": 0.1367,
+   "gwp": 0.02426,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "NRU",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.6,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "NZL",
+   "adpe": 7.205e-08,
+   "pe": 3.9817,
+   "gwp": 0.09276,
+   "wue": 14.9681,
+   "warningCodes": []
+  },
+  {
+   "zone": "OMN",
+   "adpe": 3.741e-08,
+   "pe": 22.3058,
+   "gwp": 0.54447,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "PAK",
+   "adpe": 8.43e-08,
+   "pe": 10.886,
+   "gwp": 0.34656,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "PAN",
+   "adpe": 7.906e-08,
+   "pe": 5.4656,
+   "gwp": 0.22115,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "PER",
+   "adpe": 9.527e-08,
+   "pe": 4.0973,
+   "gwp": 0.23825,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "PHL",
+   "adpe": 5.953e-08,
+   "pe": 8.4176,
+   "gwp": 0.58829,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "PNG",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.51374,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "POL",
+   "adpe": 1.0195e-07,
+   "pe": 11.1352,
+   "gwp": 0.5886,
+   "wue": 2.5135,
+   "warningCodes": []
+  },
+  {
+   "zone": "PRI",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.65466,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "PRK",
+   "adpe": 1.1746e-07,
+   "pe": 7.9688,
+   "gwp": 0.34059,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "PRT",
+   "adpe": 3.419e-08,
+   "pe": 6.5813,
+   "gwp": 0.12791,
+   "wue": 9.5932,
+   "warningCodes": []
+  },
+  {
+   "zone": "PRY",
+   "adpe": 1.4918e-07,
+   "pe": 0.0195,
+   "gwp": 0.0247,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "PSE",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.41414,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "PYF",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.43056,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "QAT",
+   "adpe": 1.324e-08,
+   "pe": 11.8805,
+   "gwp": 0.58152,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "REU",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.39414,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "ROU",
+   "adpe": 9.818e-08,
+   "pe": 9.1329,
+   "gwp": 0.25075,
+   "wue": 7.3563,
+   "warningCodes": []
+  },
+  {
+   "zone": "RUS",
+   "adpe": 9.603e-08,
+   "pe": 10.9691,
+   "gwp": 0.44973,
+   "wue": 3.4595,
+   "warningCodes": []
+  },
+  {
+   "zone": "RWA",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.35398,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "SAU",
+   "adpe": 1.342e-08,
+   "pe": 14.0581,
+   "gwp": 0.69195,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "SDN",
+   "adpe": 9.557e-08,
+   "pe": 12.8292,
+   "gwp": 0.15369,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "SEN",
+   "adpe": 4.707e-08,
+   "pe": 13.0059,
+   "gwp": 0.53997,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "SGP",
+   "adpe": 1.985e-08,
+   "pe": 10.3089,
+   "gwp": 0.49709,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "SHN",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 1.0,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "SLB",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.63636,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "SLE",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.04762,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "SLV",
+   "adpe": 4.721e-08,
+   "pe": 5.1138,
+   "gwp": 0.13932,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "SOM",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.51163,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "SPM",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.6,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "SRB",
+   "adpe": 1.3277e-07,
+   "pe": 10.311,
+   "gwp": 0.6958,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "SSD",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.64286,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "STP",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.55556,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "SUR",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.32184,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "SVK",
+   "adpe": 6.061e-08,
+   "pe": 8.8184,
+   "gwp": 0.09485,
+   "wue": 5.7952,
+   "warningCodes": []
+  },
+  {
+   "zone": "SVN",
+   "adpe": 9.923e-08,
+   "pe": 8.4293,
+   "gwp": 0.18329,
+   "wue": 2.9769,
+   "warningCodes": []
+  },
+  {
+   "zone": "SWE",
+   "adpe": 7.771e-08,
+   "pe": 4.73,
+   "gwp": 0.03526,
+   "wue": 6.0315,
+   "warningCodes": []
+  },
+  {
+   "zone": "SWZ",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.13115,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "SYC",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.55556,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "SYR",
+   "adpe": 2.684e-08,
+   "pe": 16.0882,
+   "gwp": 0.70619,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "TCA",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.62963,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "TCD",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.62162,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "TGO",
+   "adpe": 1.3426e-07,
+   "pe": 5.912,
+   "gwp": 0.42254,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "THA",
+   "adpe": 5.696e-08,
+   "pe": 9.0495,
+   "gwp": 0.54574,
+   "wue": 2.8902,
+   "warningCodes": []
+  },
+  {
+   "zone": "TJK",
+   "adpe": 1.5262e-07,
+   "pe": 0.4791,
+   "gwp": 0.07256,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "TKM",
+   "adpe": 1.3182e-07,
+   "pe": 23.3003,
+   "gwp": 1.30627,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "TLS",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.66667,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "TON",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.57143,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "TTO",
+   "adpe": 6.455e-08,
+   "pe": 14.289,
+   "gwp": 0.68168,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "TUN",
+   "adpe": 1.77e-08,
+   "pe": 12.5148,
+   "gwp": 0.56029,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "TUR",
+   "adpe": 7.498e-08,
+   "pe": 8.7855,
+   "gwp": 0.47474,
+   "wue": 4.9197,
+   "warningCodes": []
+  },
+  {
+   "zone": "TWN",
+   "adpe": 5.781e-08,
+   "pe": 10.9587,
+   "gwp": 0.63321,
+   "wue": 1.4886,
+   "warningCodes": []
+  },
+  {
+   "zone": "TZA",
+   "adpe": 1.3226e-07,
+   "pe": 5.8527,
+   "gwp": 0.34502,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "UGA",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.05852,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "UKR",
+   "adpe": 6.479e-08,
+   "pe": 12.2117,
+   "gwp": 0.25047,
+   "wue": 2.1306,
+   "warningCodes": []
+  },
+  {
+   "zone": "URY",
+   "adpe": 1.0459e-07,
+   "pe": 3.765,
+   "gwp": 0.0804,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "USA",
+   "adpe": 9.855e-08,
+   "pe": 9.6884,
+   "gwp": 0.3844,
+   "wue": 3.1321,
+   "warningCodes": []
+  },
+  {
+   "zone": "UZB",
+   "adpe": 1.0368e-07,
+   "pe": 12.9214,
+   "gwp": 1.0,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "VCT",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.6,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "VEN",
+   "adpe": 1.1281e-07,
+   "pe": 4.9129,
+   "gwp": 0.08586,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "VGB",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.64706,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "VIR",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.63235,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "VNM",
+   "adpe": 9.456e-08,
+   "pe": 6.9003,
+   "gwp": 0.46073,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "VUT",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.5,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "WOR",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.45829,
+   "wue": 3.908,
+   "warningCodes": []
+  },
+  {
+   "zone": "WSM",
+   "adpe": 1.349e-08,
+   "pe": 2.5871,
+   "gwp": 0.375,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-adpe-world",
+    "electricity-mix-pe-world",
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "YEM",
+   "adpe": 1.639e-08,
+   "pe": 14.4784,
+   "gwp": 0.59238,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "ZAF",
+   "adpe": 8.624e-08,
+   "pe": 11.357,
+   "gwp": 0.69929,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "ZMB",
+   "adpe": 1.6219e-07,
+   "pe": 0.0899,
+   "gwp": 0.11968,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  },
+  {
+   "zone": "ZWE",
+   "adpe": 1.095e-07,
+   "pe": 7.7549,
+   "gwp": 0.38402,
+   "wue": 3.908,
+   "warningCodes": [
+    "electricity-mix-wue-world"
+   ]
+  }
+ ],
+ "modelLookups": [
+  {
+   "provider": "openai",
+   "name": "gpt-4o-mini",
+   "found": true,
+   "resolvedName": "gpt-4o-mini"
+  },
+  {
+   "provider": "openai",
+   "name": "does-not-exist",
+   "found": false,
+   "resolvedName": null
+  },
+  {
+   "provider": "anthropic",
+   "name": "claude-haiku-4-5",
+   "found": true,
+   "resolvedName": "claude-haiku-4-5"
+  },
+  {
+   "provider": "nope",
+   "name": "whatever",
+   "found": false,
+   "resolvedName": null
+  }
+ ]
+}

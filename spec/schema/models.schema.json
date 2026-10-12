@@ -1,0 +1,166 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://ecologits.ai/spec/schema/models.schema.json",
+    "title": "models.json",
+    "description": "Model registry: architectures plus aliases that resolve to already-registered models of the same provider.",
+    "type": "object",
+    "required": ["models"],
+    "properties": {
+        "aliases": {
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "#/$defs/alias"
+            }
+        },
+        "models": {
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "#/$defs/model"
+            }
+        }
+    },
+    "additionalProperties": false,
+    "$defs": {
+        "identifier": {
+            "type": "string",
+            "minLength": 1
+        },
+        "provider": {
+            "enum": [
+                "anthropic",
+                "mistralai",
+                "openai",
+                "huggingface_hub",
+                "cohere",
+                "google_genai"
+            ]
+        },
+        "valueOrRange": {
+            "oneOf": [
+                {
+                    "type": "number"
+                },
+                {
+                    "type": "object",
+                    "required": ["min", "max"],
+                    "properties": {
+                        "min": {
+                            "type": "number"
+                        },
+                        "max": {
+                            "type": "number"
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            ]
+        },
+        "parametersMoE": {
+            "type": "object",
+            "required": ["total", "active"],
+            "properties": {
+                "total": {
+                    "$ref": "#/$defs/valueOrRange"
+                },
+                "active": {
+                    "$ref": "#/$defs/valueOrRange"
+                }
+            },
+            "additionalProperties": false
+        },
+        "architecture": {
+            "type": "object",
+            "required": ["type", "parameters"],
+            "properties": {
+                "type": {
+                    "enum": ["dense", "moe"]
+                },
+                "parameters": {
+                    "oneOf": [
+                        {
+                            "$ref": "#/$defs/valueOrRange"
+                        },
+                        {
+                            "$ref": "#/$defs/parametersMoE"
+                        }
+                    ]
+                }
+            },
+            "additionalProperties": false
+        },
+        "deployment": {
+            "type": ["object", "null"],
+            "required": ["tps", "ttft"],
+            "properties": {
+                "tps": {
+                    "type": ["number", "null"]
+                },
+                "ttft": {
+                    "type": ["number", "null"]
+                }
+            },
+            "additionalProperties": false
+        },
+        "model": {
+            "type": "object",
+            "required": [
+                "type",
+                "provider",
+                "name",
+                "architecture",
+                "warnings",
+                "sources",
+                "deployment"
+            ],
+            "properties": {
+                "type": {
+                    "const": "model"
+                },
+                "provider": {
+                    "$ref": "#/$defs/provider"
+                },
+                "name": {
+                    "$ref": "#/$defs/identifier"
+                },
+                "architecture": {
+                    "$ref": "#/$defs/architecture"
+                },
+                "warnings": {
+                    "type": ["array", "null"],
+                    "items": {
+                        "$ref": "#/$defs/identifier"
+                    }
+                },
+                "sources": {
+                    "type": ["array", "null"],
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "deployment": {
+                    "$ref": "#/$defs/deployment"
+                }
+            },
+            "additionalProperties": false
+        },
+        "alias": {
+            "type": "object",
+            "required": ["type", "provider", "name", "alias"],
+            "properties": {
+                "type": {
+                    "const": "alias"
+                },
+                "provider": {
+                    "$ref": "#/$defs/provider"
+                },
+                "name": {
+                    "$ref": "#/$defs/identifier"
+                },
+                "alias": {
+                    "$ref": "#/$defs/identifier"
+                }
+            },
+            "additionalProperties": false
+        }
+    }
+}

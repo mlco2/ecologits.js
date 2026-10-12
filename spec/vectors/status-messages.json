@@ -1,0 +1,109 @@
+{
+ "kind": "status-messages",
+ "warnings": [
+  {
+   "code": "model-arch-not-released",
+   "className": "ModelArchNotReleasedWarning",
+   "message": "The model architecture has not been released, expect lower precision.",
+   "str": "The model architecture has not been released, expect lower precision. For further information visit https://ecologits.ai/tutorial/warnings_and_errors/#model-arch-not-released",
+   "dump": {
+    "code": "model-arch-not-released",
+    "message": "The model architecture has not been released, expect lower precision."
+   }
+  },
+  {
+   "code": "model-arch-multimodal",
+   "className": "ModelArchMultimodalWarning",
+   "message": "The model architecture is multimodal, expect lower precision.",
+   "str": "The model architecture is multimodal, expect lower precision. For further information visit https://ecologits.ai/tutorial/warnings_and_errors/#model-arch-multimodal",
+   "dump": {
+    "code": "model-arch-multimodal",
+    "message": "The model architecture is multimodal, expect lower precision."
+   }
+  },
+  {
+   "code": "electricity-mix-adpe-world",
+   "className": "ElectricityMixADPeDefaultWarning",
+   "message": "The electricity mix ADPe factor is using the world default value, expect lower precision.",
+   "str": "The electricity mix ADPe factor is using the world default value, expect lower precision. For further information visit https://ecologits.ai/tutorial/warnings_and_errors/#electricity-mix-adpe-world",
+   "dump": {
+    "code": "electricity-mix-adpe-world",
+    "message": "The electricity mix ADPe factor is using the world default value, expect lower precision."
+   }
+  },
+  {
+   "code": "electricity-mix-pe-world",
+   "className": "ElectricityMixPEDefaultWarning",
+   "message": "The electricity mix PE factor is using the world default value, expect lower precision.",
+   "str": "The electricity mix PE factor is using the world default value, expect lower precision. For further information visit https://ecologits.ai/tutorial/warnings_and_errors/#electricity-mix-pe-world",
+   "dump": {
+    "code": "electricity-mix-pe-world",
+    "message": "The electricity mix PE factor is using the world default value, expect lower precision."
+   }
+  },
+  {
+   "code": "electricity-mix-wue-world",
+   "className": "ElectricityMixWUEDefaultWarning",
+   "message": "The electricity mix WUE factor is using the world default value, expect lower precision.",
+   "str": "The electricity mix WUE factor is using the world default value, expect lower precision. For further information visit https://ecologits.ai/tutorial/warnings_and_errors/#electricity-mix-wue-world",
+   "dump": {
+    "code": "electricity-mix-wue-world",
+    "message": "The electricity mix WUE factor is using the world default value, expect lower precision."
+   }
+  }
+ ],
+ "errors": [
+  {
+   "code": "model-not-registered",
+   "className": "ModelNotRegisteredError",
+   "message": "The model is not registered in the model repository.",
+   "str": "The model is not registered in the model repository. For further information visit https://ecologits.ai/tutorial/warnings_and_errors/#model-not-registered",
+   "dump": {
+    "code": "model-not-registered",
+    "message": "The model is not registered in the model repository."
+   }
+  },
+  {
+   "code": "zone-not-registered",
+   "className": "ZoneNotRegisteredError",
+   "message": "The zone is not registered.",
+   "str": "The zone is not registered. For further information visit https://ecologits.ai/tutorial/warnings_and_errors/#zone-not-registered",
+   "dump": {
+    "code": "zone-not-registered",
+    "message": "The zone is not registered."
+   }
+  }
+ ],
+ "unknown": [
+  {
+   "kind": "warning",
+   "code": "nope",
+   "error": "ValueError"
+  },
+  {
+   "kind": "error",
+   "code": "nope",
+   "error": "ValueError"
+  },
+  {
+   "kind": "warning",
+   "code": "",
+   "error": "ValueError"
+  },
+  {
+   "kind": "error",
+   "code": "",
+   "error": "ValueError"
+  },
+  {
+   "kind": "warning",
+   "code": "model-arch-not-released ",
+   "error": "ValueError"
+  },
+  {
+   "kind": "error",
+   "code": "model-arch-not-released ",
+   "error": "ValueError"
+  }
+ ]
+}
