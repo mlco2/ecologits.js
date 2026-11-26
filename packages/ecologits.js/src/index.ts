@@ -77,6 +77,7 @@ export {
     ModelArchMultimodalWarning,
     ModelArchNotReleasedWarning,
     ModelNotRegisteredError,
+    ModelNameFuzzyMatchWarning,
     STATUS_DOCS_URL,
     StatusMessage,
     statusDocUrl,

@@ -2,7 +2,7 @@
 // AUTO-GENERATED FILE -- DO NOT EDIT.
 // Electricity mix impact factors, compiled from ecologits/data/electricity_mixes.json.
 //
-// Source of truth: ecologits v0.11.2 (c739e8d61f6a)
+// Source of truth: ecologits v0.12.0 (ec1a73503616)
 // Regenerate with: npm run sync-data
 import type { ElectricityMixData } from "./schema.js";
 
@@ -321,7 +321,7 @@ export const ELECTRICITY_MIXES: readonly ElectricityMixData[] = [
     "name": "CAF",
     "adpe": 1.349e-8,
     "pe": 2.5871,
-    "gwp": 0,
+    "gwp": 0.024,
     "wue": 3.908,
     "warnings": [
       "electricity-mix-adpe-world",

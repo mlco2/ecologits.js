@@ -2,7 +2,7 @@
 // AUTO-GENERATED FILE -- DO NOT EDIT.
 // LLM model registry, compiled from ecologits/data/models.json.
 //
-// Source of truth: ecologits v0.11.2 (c739e8d61f6a)
+// Source of truth: ecologits v0.12.0 (ec1a73503616)
 // Regenerate with: npm run sync-data
 import type { AliasData, ModelData } from "./schema.js";
 
@@ -24,42 +24,6 @@ export const MODEL_ALIASES: readonly AliasData[] = [
     "provider": "anthropic",
     "name": "claude-opus-4-5",
     "alias": "claude-opus-4-5-20251101"
-  },
-  {
-    "type": "alias",
-    "provider": "openai",
-    "name": "gpt-35-turbo",
-    "alias": "gpt-3.5-turbo"
-  },
-  {
-    "type": "alias",
-    "provider": "openai",
-    "name": "gpt-35-turbo-0125",
-    "alias": "gpt-3.5-turbo-0125"
-  },
-  {
-    "type": "alias",
-    "provider": "openai",
-    "name": "gpt-35-turbo-1106",
-    "alias": "gpt-3.5-turbo-1106"
-  },
-  {
-    "type": "alias",
-    "provider": "openai",
-    "name": "gpt-35-turbo-16k",
-    "alias": "gpt-3.5-turbo-16k"
-  },
-  {
-    "type": "alias",
-    "provider": "openai",
-    "name": "gpt-35-turbo-instruct-0914",
-    "alias": "gpt-3.5-turbo-instruct-0914"
-  },
-  {
-    "type": "alias",
-    "provider": "openai",
-    "name": "gpt-35-turbo-instruct",
-    "alias": "gpt-3.5-turbo-instruct"
   }
 ];
 
@@ -116,8 +80,8 @@ export const MODELS: readonly ModelData[] = [
       "https://huggingface.co/CohereLabs/c4ai-command-a-03-2025"
     ],
     "deployment": {
-      "tps": 63,
-      "ttft": 0.95
+      "tps": 82,
+      "ttft": 0.27
     }
   },
   {
@@ -141,8 +105,8 @@ export const MODELS: readonly ModelData[] = [
       "https://cohere.com/blog/command-a-plus"
     ],
     "deployment": {
-      "tps": 139.5,
-      "ttft": 0.23
+      "tps": 157,
+      "ttft": 0.35
     }
   },
   {
@@ -215,8 +179,8 @@ export const MODELS: readonly ModelData[] = [
       "https://huggingface.co/CohereLabs/c4ai-command-r-08-2024"
     ],
     "deployment": {
-      "tps": 23.5,
-      "ttft": 0.32
+      "tps": 34,
+      "ttft": 0.28
     }
   },
   {
@@ -233,8 +197,8 @@ export const MODELS: readonly ModelData[] = [
       "https://huggingface.co/CohereLabs/c4ai-command-r-plus-08-2024"
     ],
     "deployment": {
-      "tps": 8,
-      "ttft": 0.65
+      "tps": 6,
+      "ttft": 0.62
     }
   },
   {
@@ -251,8 +215,8 @@ export const MODELS: readonly ModelData[] = [
       "https://huggingface.co/CohereLabs/c4ai-command-r7b-12-2024"
     ],
     "deployment": {
-      "tps": 49,
-      "ttft": 0.35
+      "tps": 62,
+      "ttft": 0.22
     }
   },
   {
@@ -3339,8 +3303,8 @@ export const MODELS: readonly ModelData[] = [
       "https://mistral.ai/news/codestral"
     ],
     "deployment": {
-      "tps": 44.5,
-      "ttft": 0.31
+      "tps": 152,
+      "ttft": 0.32
     }
   },
   {
@@ -3364,6 +3328,33 @@ export const MODELS: readonly ModelData[] = [
   {
     "type": "model",
     "provider": "mistralai",
+    "name": "deepseek-v4-1-flash-1017",
+    "architecture": {
+      "type": "moe",
+      "parameters": {
+        "total": 552,
+        "active": {
+          "min": 8,
+          "max": 16
+        }
+      }
+    },
+    "warnings": [
+      "model-arch-multimodal"
+    ],
+    "sources": [
+      "https://docs.mistral.ai/models/deepseek-v4-flash-1017",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
+    ],
+    "deployment": {
+      "tps": 235,
+      "ttft": 0.78
+    }
+  },
+  {
+    "type": "model",
+    "provider": "mistralai",
     "name": "glm-5-2",
     "architecture": {
       "type": "moe",
@@ -3378,50 +3369,8 @@ export const MODELS: readonly ModelData[] = [
       "https://github.com/zai-org/GLM-5"
     ],
     "deployment": {
-      "tps": 57.5,
-      "ttft": 0.64
-    }
-  },
-  {
-    "type": "model",
-    "provider": "mistralai",
-    "name": "labs-leanstral-1-5",
-    "architecture": {
-      "type": "moe",
-      "parameters": {
-        "total": 119,
-        "active": 6.5
-      }
-    },
-    "warnings": null,
-    "sources": [
-      "https://docs.mistral.ai/models/leanstral-1-5",
-      "https://mistral.ai/news/leanstral-1-5/"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
-    }
-  },
-  {
-    "type": "model",
-    "provider": "mistralai",
-    "name": "labs-leanstral-1-5-1",
-    "architecture": {
-      "type": "moe",
-      "parameters": {
-        "total": 119,
-        "active": 6.5
-      }
-    },
-    "warnings": null,
-    "sources": [
-      "https://docs.mistral.ai/models/leanstral-1-5",
-      "https://mistral.ai/news/leanstral-1-5/"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
+      "tps": 69.5,
+      "ttft": 1.67
     }
   },
   {
@@ -3476,8 +3425,8 @@ export const MODELS: readonly ModelData[] = [
       "https://docs.mistral.ai/getting-started/models/"
     ],
     "deployment": {
-      "tps": 24.5,
-      "ttft": 0.6
+      "tps": 79,
+      "ttft": 0.35
     }
   },
   {
@@ -3511,8 +3460,8 @@ export const MODELS: readonly ModelData[] = [
       "https://mistral.ai/news/ministraux"
     ],
     "deployment": {
-      "tps": 33,
-      "ttft": 0.36
+      "tps": 186,
+      "ttft": 0.31
     }
   },
   {
@@ -3547,8 +3496,8 @@ export const MODELS: readonly ModelData[] = [
       "https://mistral.ai/news/ministraux"
     ],
     "deployment": {
-      "tps": 42.5,
-      "ttft": 0.34
+      "tps": 89,
+      "ttft": 0.33
     }
   },
   {
@@ -3607,8 +3556,52 @@ export const MODELS: readonly ModelData[] = [
       "https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512"
     ],
     "deployment": {
-      "tps": 16,
-      "ttft": 0.64
+      "tps": 66.5,
+      "ttft": 0.59
+    }
+  },
+  {
+    "type": "model",
+    "provider": "mistralai",
+    "name": "mistral-large-4",
+    "architecture": {
+      "type": "moe",
+      "parameters": {
+        "total": 1050,
+        "active": 52
+      }
+    },
+    "warnings": [
+      "model-arch-multimodal"
+    ],
+    "sources": [
+      "https://docs.mistral.ai/models/mistral-large-4-0"
+    ],
+    "deployment": {
+      "tps": 51,
+      "ttft": 1.11
+    }
+  },
+  {
+    "type": "model",
+    "provider": "mistralai",
+    "name": "mistral-large-4-0",
+    "architecture": {
+      "type": "moe",
+      "parameters": {
+        "total": 1050,
+        "active": 52
+      }
+    },
+    "warnings": [
+      "model-arch-multimodal"
+    ],
+    "sources": [
+      "https://docs.mistral.ai/models/mistral-large-4-0"
+    ],
+    "deployment": {
+      "tps": 44.5,
+      "ttft": 1.06
     }
   },
   {
@@ -3618,21 +3611,19 @@ export const MODELS: readonly ModelData[] = [
     "architecture": {
       "type": "moe",
       "parameters": {
-        "total": 675,
-        "active": 41
+        "total": 1050,
+        "active": 52
       }
     },
     "warnings": [
       "model-arch-multimodal"
     ],
     "sources": [
-      "https://docs.mistral.ai/models/mistral-large-3-25-12",
-      "https://mistral.ai/news/mistral-3/",
-      "https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512"
+      "https://docs.mistral.ai/models/mistral-large-4-0"
     ],
     "deployment": {
-      "tps": 42.5,
-      "ttft": 0.64
+      "tps": 51,
+      "ttft": 1.34
     }
   },
   {
@@ -3693,8 +3684,8 @@ export const MODELS: readonly ModelData[] = [
       "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B"
     ],
     "deployment": {
-      "tps": 103.2,
-      "ttft": 0.36
+      "tps": 78.5,
+      "ttft": 0.41
     }
   },
   {
@@ -3713,8 +3704,8 @@ export const MODELS: readonly ModelData[] = [
       "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B"
     ],
     "deployment": {
-      "tps": 27,
-      "ttft": 0.36
+      "tps": 107,
+      "ttft": 0.48
     }
   },
   {
@@ -3733,8 +3724,8 @@ export const MODELS: readonly ModelData[] = [
       "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B"
     ],
     "deployment": {
-      "tps": 27,
-      "ttft": 0.36
+      "tps": 107,
+      "ttft": 0.48
     }
   },
   {
@@ -3776,8 +3767,8 @@ export const MODELS: readonly ModelData[] = [
       "https://mistral.ai/news/mistral-small-4"
     ],
     "deployment": {
-      "tps": 94.2,
-      "ttft": 0.39
+      "tps": 111,
+      "ttft": 0.49
     }
   },
   {
@@ -3795,82 +3786,6 @@ export const MODELS: readonly ModelData[] = [
     "sources": [
       "https://docs.mistral.ai/getting-started/models/",
       "https://mistral.ai/news/mistral-small-4"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
-    }
-  },
-  {
-    "type": "model",
-    "provider": "mistralai",
-    "name": "voxtral-mini-2602",
-    "architecture": {
-      "type": "dense",
-      "parameters": 4.68
-    },
-    "warnings": [
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://docs.mistral.ai/getting-started/models/"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
-    }
-  },
-  {
-    "type": "model",
-    "provider": "mistralai",
-    "name": "voxtral-mini-latest",
-    "architecture": {
-      "type": "dense",
-      "parameters": 4.68
-    },
-    "warnings": [
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://docs.mistral.ai/getting-started/models/"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
-    }
-  },
-  {
-    "type": "model",
-    "provider": "mistralai",
-    "name": "voxtral-small-2507",
-    "architecture": {
-      "type": "dense",
-      "parameters": 24.3
-    },
-    "warnings": [
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://docs.mistral.ai/getting-started/models/"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
-    }
-  },
-  {
-    "type": "model",
-    "provider": "mistralai",
-    "name": "voxtral-small-latest",
-    "architecture": {
-      "type": "dense",
-      "parameters": 24.3
-    },
-    "warnings": [
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://docs.mistral.ai/getting-started/models/"
     ],
     "deployment": {
       "tps": null,
@@ -3915,8 +3830,8 @@ export const MODELS: readonly ModelData[] = [
       "https://github.com/zai-org/GLM-5"
     ],
     "deployment": {
-      "tps": null,
-      "ttft": null
+      "tps": 90,
+      "ttft": 0.96
     }
   },
   {
@@ -3936,8 +3851,30 @@ export const MODELS: readonly ModelData[] = [
       "https://github.com/zai-org/GLM-5"
     ],
     "deployment": {
-      "tps": null,
-      "ttft": null
+      "tps": 100,
+      "ttft": 1.14
+    }
+  },
+  {
+    "type": "model",
+    "provider": "mistralai",
+    "name": "zai-glm-5-3-flash",
+    "architecture": {
+      "type": "moe",
+      "parameters": {
+        "total": 320,
+        "active": 18
+      }
+    },
+    "warnings": [
+      "model-arch-multimodal"
+    ],
+    "sources": [
+      "https://docs.mistral.ai/models/zai-glm-5-3-flash"
+    ],
+    "deployment": {
+      "tps": 104,
+      "ttft": 1.15
     }
   },
   {
@@ -3984,8 +3921,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.claude.com/docs/en/models/overview"
     ],
     "deployment": {
-      "tps": 42,
-      "ttft": 3.52
+      "tps": 53,
+      "ttft": 4.22
     }
   },
   {
@@ -4011,8 +3948,35 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.claude.com/docs/en/models/overview"
     ],
     "deployment": {
-      "tps": 53,
-      "ttft": 5.96
+      "tps": 59,
+      "ttft": 1.85
+    }
+  },
+  {
+    "type": "model",
+    "provider": "anthropic",
+    "name": "claude-fable-5-2",
+    "architecture": {
+      "type": "moe",
+      "parameters": {
+        "total": 1072,
+        "active": {
+          "min": 107.2,
+          "max": 320
+        }
+      }
+    },
+    "warnings": [
+      "model-arch-not-released",
+      "model-arch-multimodal"
+    ],
+    "sources": [
+      "https://platform.claude.com/docs/en/models/fable-5-2/overview",
+      "https://platform.claude.com/docs/en/models/overview"
+    ],
+    "deployment": {
+      "tps": 139.8,
+      "ttft": 3.43
     }
   },
   {
@@ -4033,8 +3997,30 @@ export const MODELS: readonly ModelData[] = [
       "https://docs.anthropic.com/en/docs/about-claude/models"
     ],
     "deployment": {
-      "tps": 60,
-      "ttft": 0.61
+      "tps": 90,
+      "ttft": 0.4
+    }
+  },
+  {
+    "type": "model",
+    "provider": "anthropic",
+    "name": "claude-haiku-5-5",
+    "architecture": {
+      "type": "dense",
+      "parameters": {
+        "min": 10,
+        "max": 35
+      }
+    },
+    "warnings": [
+      "model-arch-not-released"
+    ],
+    "sources": [
+      "https://platform.claude.com/docs/en/models/haiku-5-5/overview"
+    ],
+    "deployment": {
+      "tps": 155,
+      "ttft": 1.34
     }
   },
   {
@@ -4058,8 +4044,8 @@ export const MODELS: readonly ModelData[] = [
       "https://docs.anthropic.com/en/docs/about-claude/models"
     ],
     "deployment": {
-      "tps": 33,
-      "ttft": 1.24
+      "tps": 38,
+      "ttft": 1.2
     }
   },
   {
@@ -4083,7 +4069,7 @@ export const MODELS: readonly ModelData[] = [
       "https://docs.anthropic.com/en/docs/about-claude/models"
     ],
     "deployment": {
-      "tps": 36,
+      "tps": 32,
       "ttft": 1.69
     }
   },
@@ -4108,8 +4094,8 @@ export const MODELS: readonly ModelData[] = [
       "https://docs.anthropic.com/en/docs/about-claude/models"
     ],
     "deployment": {
-      "tps": 53,
-      "ttft": 1.35
+      "tps": 44,
+      "ttft": 1.28
     }
   },
   {
@@ -4133,8 +4119,8 @@ export const MODELS: readonly ModelData[] = [
       "https://docs.anthropic.com/en/docs/about-claude/models"
     ],
     "deployment": {
-      "tps": 108.5,
-      "ttft": 1.01
+      "tps": 70.2,
+      "ttft": 0.8
     }
   },
   {
@@ -4160,8 +4146,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.claude.com/docs/en/models/overview"
     ],
     "deployment": {
-      "tps": 20.5,
-      "ttft": 1.96
+      "tps": 107,
+      "ttft": 2.23
     }
   },
   {
@@ -4187,8 +4173,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.claude.com/docs/en/models/overview"
     ],
     "deployment": {
-      "tps": 75.5,
-      "ttft": 3.43
+      "tps": 131,
+      "ttft": 2.27
     }
   },
   {
@@ -4212,8 +4198,8 @@ export const MODELS: readonly ModelData[] = [
       "https://docs.anthropic.com/en/docs/about-claude/models"
     ],
     "deployment": {
-      "tps": 44,
-      "ttft": 1.18
+      "tps": 46,
+      "ttft": 1.03
     }
   },
   {
@@ -4237,8 +4223,8 @@ export const MODELS: readonly ModelData[] = [
       "https://docs.anthropic.com/en/docs/about-claude/models"
     ],
     "deployment": {
-      "tps": 39,
-      "ttft": 1.37
+      "tps": 41,
+      "ttft": 0.79
     }
   },
   {
@@ -4264,8 +4250,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.claude.com/docs/en/models/overview"
     ],
     "deployment": {
-      "tps": 16,
-      "ttft": 1.13
+      "tps": 72,
+      "ttft": 1.1
     }
   },
   {
@@ -4291,8 +4277,8 @@ export const MODELS: readonly ModelData[] = [
       "https://www.anthropic.com/claude-sonnet-5-5"
     ],
     "deployment": {
-      "tps": 91,
-      "ttft": 3.35
+      "tps": 104,
+      "ttft": 1.37
     }
   },
   {
@@ -4317,8 +4303,8 @@ export const MODELS: readonly ModelData[] = [
       "https://ai.google.dev/gemini-api/docs/models"
     ],
     "deployment": {
-      "tps": 70.5,
-      "ttft": 0.87
+      "tps": 68.5,
+      "ttft": 1.14
     }
   },
   {
@@ -4344,7 +4330,7 @@ export const MODELS: readonly ModelData[] = [
     ],
     "deployment": {
       "tps": null,
-      "ttft": 13.48
+      "ttft": 15.21
     }
   },
   {
@@ -4366,8 +4352,8 @@ export const MODELS: readonly ModelData[] = [
       "https://ai.google.dev/gemini-api/docs/models"
     ],
     "deployment": {
-      "tps": 87.5,
-      "ttft": 0.78
+      "tps": 131.5,
+      "ttft": 0.92
     }
   },
   {
@@ -4392,8 +4378,8 @@ export const MODELS: readonly ModelData[] = [
       "https://ai.google.dev/gemini-api/docs/models"
     ],
     "deployment": {
-      "tps": 88,
-      "ttft": 2.45
+      "tps": 91.8,
+      "ttft": 2.67
     }
   },
   {
@@ -4418,8 +4404,8 @@ export const MODELS: readonly ModelData[] = [
       "https://ai.google.dev/gemini-api/docs/models"
     ],
     "deployment": {
-      "tps": 67,
-      "ttft": 2.04
+      "tps": 84,
+      "ttft": 1.45
     }
   },
   {
@@ -4493,8 +4479,8 @@ export const MODELS: readonly ModelData[] = [
       "https://ai.google.dev/gemini-api/docs/models"
     ],
     "deployment": {
-      "tps": 36,
-      "ttft": 1.02
+      "tps": 106,
+      "ttft": 1.15
     }
   },
   {
@@ -4542,8 +4528,8 @@ export const MODELS: readonly ModelData[] = [
       "https://ai.google.dev/gemini-api/docs/models"
     ],
     "deployment": {
-      "tps": 56,
-      "ttft": 48.34
+      "tps": 76,
+      "ttft": 3.19
     }
   },
   {
@@ -4596,8 +4582,8 @@ export const MODELS: readonly ModelData[] = [
       "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/"
     ],
     "deployment": {
-      "tps": 84.5,
-      "ttft": 1.82
+      "tps": 147,
+      "ttft": 1.55
     }
   },
   {
@@ -4619,8 +4605,8 @@ export const MODELS: readonly ModelData[] = [
       "https://ai.google.dev/gemini-api/docs/models"
     ],
     "deployment": {
-      "tps": 62,
-      "ttft": 1.11
+      "tps": 124,
+      "ttft": 0.77
     }
   },
   {
@@ -4646,8 +4632,8 @@ export const MODELS: readonly ModelData[] = [
       "https://deepmind.google/models/model-cards/gemini-3-6-flash/"
     ],
     "deployment": {
-      "tps": 106,
-      "ttft": 2.06
+      "tps": 117,
+      "ttft": 1.53
     }
   },
   {
@@ -4673,8 +4659,8 @@ export const MODELS: readonly ModelData[] = [
       "https://deepmind.google/models/model-cards/gemini-3-6-flash/"
     ],
     "deployment": {
-      "tps": 86,
-      "ttft": 2.39
+      "tps": 72,
+      "ttft": 2.67
     }
   },
   {
@@ -4700,8 +4686,112 @@ export const MODELS: readonly ModelData[] = [
       "https://deepmind.google/models/model-cards/gemini-3-6-flash/"
     ],
     "deployment": {
-      "tps": 37,
-      "ttft": 2.64
+      "tps": 72,
+      "ttft": 2.68
+    }
+  },
+  {
+    "type": "model",
+    "provider": "google_genai",
+    "name": "gemini-4-argon",
+    "architecture": {
+      "type": "moe",
+      "parameters": {
+        "total": 1200,
+        "active": {
+          "min": 120,
+          "max": 400
+        }
+      }
+    },
+    "warnings": [
+      "model-arch-not-released",
+      "model-arch-multimodal"
+    ],
+    "sources": [
+      "https://deepmind.google/models/model-cards/gemini-4-argon/"
+    ],
+    "deployment": {
+      "tps": 22.8,
+      "ttft": 5.19
+    }
+  },
+  {
+    "type": "model",
+    "provider": "google_genai",
+    "name": "gemini-4-carbon",
+    "architecture": {
+      "type": "moe",
+      "parameters": {
+        "total": 1200,
+        "active": {
+          "min": 120,
+          "max": 400
+        }
+      }
+    },
+    "warnings": [
+      "model-arch-not-released",
+      "model-arch-multimodal"
+    ],
+    "sources": [
+      "https://deepmind.google/models/model-cards/gemini-4-carbon/"
+    ],
+    "deployment": {
+      "tps": 58,
+      "ttft": 4.11
+    }
+  },
+  {
+    "type": "model",
+    "provider": "google_genai",
+    "name": "gemini-4-hydrogen",
+    "architecture": {
+      "type": "moe",
+      "parameters": {
+        "total": 187.5,
+        "active": {
+          "min": 18.75,
+          "max": 62.5
+        }
+      }
+    },
+    "warnings": [
+      "model-arch-not-released",
+      "model-arch-multimodal"
+    ],
+    "sources": [
+      "https://deepmind.google/models/model-cards/gemini-4-hydrogen/"
+    ],
+    "deployment": {
+      "tps": 123.2,
+      "ttft": 2.76
+    }
+  },
+  {
+    "type": "model",
+    "provider": "google_genai",
+    "name": "gemini-4-neon",
+    "architecture": {
+      "type": "moe",
+      "parameters": {
+        "total": 375,
+        "active": {
+          "min": 38,
+          "max": 112
+        }
+      }
+    },
+    "warnings": [
+      "model-arch-not-released",
+      "model-arch-multimodal"
+    ],
+    "sources": [
+      "https://deepmind.google/models/model-cards/gemini-4-neon/"
+    ],
+    "deployment": {
+      "tps": 78,
+      "ttft": 3.27
     }
   },
   {
@@ -4711,10 +4801,10 @@ export const MODELS: readonly ModelData[] = [
     "architecture": {
       "type": "moe",
       "parameters": {
-        "total": 440,
+        "total": 750,
         "active": {
-          "min": 44,
-          "max": 132
+          "min": 75,
+          "max": 200
         }
       }
     },
@@ -4723,11 +4813,12 @@ export const MODELS: readonly ModelData[] = [
       "model-arch-multimodal"
     ],
     "sources": [
-      "https://ai.google.dev/gemini-api/docs/models"
+      "https://ai.google.dev/gemini-api/docs/models/gemini-3.6-flash",
+      "https://deepmind.google/models/model-cards/gemini-3-6-flash/"
     ],
     "deployment": {
-      "tps": null,
-      "ttft": null
+      "tps": 72,
+      "ttft": 2.68
     }
   },
   {
@@ -4737,8 +4828,8 @@ export const MODELS: readonly ModelData[] = [
     "architecture": {
       "type": "dense",
       "parameters": {
-        "min": 8,
-        "max": 28
+        "min": 30,
+        "max": 105
       }
     },
     "warnings": [
@@ -4749,8 +4840,8 @@ export const MODELS: readonly ModelData[] = [
       "https://ai.google.dev/gemini-api/docs/models"
     ],
     "deployment": {
-      "tps": null,
-      "ttft": null
+      "tps": 124,
+      "ttft": 0.77
     }
   },
   {
@@ -4760,10 +4851,10 @@ export const MODELS: readonly ModelData[] = [
     "architecture": {
       "type": "moe",
       "parameters": {
-        "total": 2000,
+        "total": 1200,
         "active": {
-          "min": 200,
-          "max": 600
+          "min": 120,
+          "max": 360
         }
       }
     },
@@ -4775,8 +4866,8 @@ export const MODELS: readonly ModelData[] = [
       "https://ai.google.dev/gemini-api/docs/models"
     ],
     "deployment": {
-      "tps": null,
-      "ttft": null
+      "tps": 76,
+      "ttft": 3.19
     }
   },
   {
@@ -4799,8 +4890,8 @@ export const MODELS: readonly ModelData[] = [
       "https://deepmind.google/models/gemma/gemma-4/"
     ],
     "deployment": {
-      "tps": 24,
-      "ttft": 0.86
+      "tps": 70,
+      "ttft": 0.3
     }
   },
   {
@@ -4855,242 +4946,6 @@ export const MODELS: readonly ModelData[] = [
   {
     "type": "model",
     "provider": "openai",
-    "name": "gpt-3.5-turbo",
-    "architecture": {
-      "type": "dense",
-      "parameters": {
-        "min": 20,
-        "max": 70
-      }
-    },
-    "warnings": [
-      "model-arch-not-released"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models#gpt-3-5-turbo"
-    ],
-    "deployment": {
-      "tps": 20,
-      "ttft": 0.67
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-3.5-turbo-0125",
-    "architecture": {
-      "type": "dense",
-      "parameters": {
-        "min": 20,
-        "max": 70
-      }
-    },
-    "warnings": [
-      "model-arch-not-released"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models#gpt-3-5-turbo"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-3.5-turbo-1106",
-    "architecture": {
-      "type": "dense",
-      "parameters": {
-        "min": 20,
-        "max": 70
-      }
-    },
-    "warnings": [
-      "model-arch-not-released"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models#gpt-3-5-turbo"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-3.5-turbo-16k",
-    "architecture": {
-      "type": "dense",
-      "parameters": {
-        "min": 20,
-        "max": 70
-      }
-    },
-    "warnings": [
-      "model-arch-not-released"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models#gpt-3-5-turbo"
-    ],
-    "deployment": {
-      "tps": 7.5,
-      "ttft": 1.07
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-3.5-turbo-instruct",
-    "architecture": {
-      "type": "dense",
-      "parameters": {
-        "min": 20,
-        "max": 70
-      }
-    },
-    "warnings": [
-      "model-arch-not-released"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models#gpt-3-5-turbo"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-3.5-turbo-instruct-0914",
-    "architecture": {
-      "type": "dense",
-      "parameters": {
-        "min": 20,
-        "max": 70
-      }
-    },
-    "warnings": [
-      "model-arch-not-released"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models#gpt-3-5-turbo"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-4",
-    "architecture": {
-      "type": "moe",
-      "parameters": {
-        "total": 1760,
-        "active": {
-          "min": 176,
-          "max": 528
-        }
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models#gpt-4-turbo-and-gpt-4"
-    ],
-    "deployment": {
-      "tps": 38,
-      "ttft": 0.92
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-4-0613",
-    "architecture": {
-      "type": "moe",
-      "parameters": {
-        "total": 1760,
-        "active": {
-          "min": 176,
-          "max": 528
-        }
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models#gpt-4-turbo-and-gpt-4"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-4-turbo",
-    "architecture": {
-      "type": "moe",
-      "parameters": {
-        "total": 880,
-        "active": {
-          "min": 88,
-          "max": 264
-        }
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models#gpt-4-turbo-and-gpt-4"
-    ],
-    "deployment": {
-      "tps": 7.5,
-      "ttft": 1.17
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-4-turbo-2024-04-09",
-    "architecture": {
-      "type": "moe",
-      "parameters": {
-        "total": 880,
-        "active": {
-          "min": 88,
-          "max": 264
-        }
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models#gpt-4-turbo-and-gpt-4"
-    ],
-    "deployment": {
-      "tps": 7.5,
-      "ttft": 1.17
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
     "name": "gpt-4.1",
     "architecture": {
       "type": "moe",
@@ -5110,8 +4965,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 45,
-      "ttft": 0.95
+      "tps": 70,
+      "ttft": 1.09
     }
   },
   {
@@ -5136,8 +4991,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 45,
-      "ttft": 0.95
+      "tps": 70,
+      "ttft": 1.09
     }
   },
   {
@@ -5159,7 +5014,7 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 49,
+      "tps": 69,
       "ttft": 0.95
     }
   },
@@ -5182,54 +5037,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 49,
+      "tps": 69,
       "ttft": 0.95
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-4.1-nano",
-    "architecture": {
-      "type": "dense",
-      "parameters": {
-        "min": 10,
-        "max": 37
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models"
-    ],
-    "deployment": {
-      "tps": 69,
-      "ttft": 0.97
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-4.1-nano-2025-04-14",
-    "architecture": {
-      "type": "dense",
-      "parameters": {
-        "min": 10,
-        "max": 37
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models"
-    ],
-    "deployment": {
-      "tps": 69,
-      "ttft": 0.98
     }
   },
   {
@@ -5254,34 +5063,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models#gpt-4o"
     ],
     "deployment": {
-      "tps": 41,
-      "ttft": 0.65
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-4o-2024-05-13",
-    "architecture": {
-      "type": "moe",
-      "parameters": {
-        "total": 440,
-        "active": {
-          "min": 44,
-          "max": 132
-        }
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models#gpt-4o"
-    ],
-    "deployment": {
-      "tps": 70,
-      "ttft": 1.33
+      "tps": 67,
+      "ttft": 0.57
     }
   },
   {
@@ -5306,8 +5089,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models#gpt-4o"
     ],
     "deployment": {
-      "tps": 10,
-      "ttft": 2.21
+      "tps": 59,
+      "ttft": 1.22
     }
   },
   {
@@ -5332,8 +5115,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models#gpt-4o"
     ],
     "deployment": {
-      "tps": 34,
-      "ttft": 0.86
+      "tps": 136,
+      "ttft": 0.4
     }
   },
   {
@@ -5355,8 +5138,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models#gpt-4o-mini"
     ],
     "deployment": {
-      "tps": 58,
-      "ttft": 0.53
+      "tps": 72,
+      "ttft": 0.56
     }
   },
   {
@@ -5378,54 +5161,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models#gpt-4o-mini"
     ],
     "deployment": {
-      "tps": 43,
-      "ttft": 0.65
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-4o-mini-search-preview",
-    "architecture": {
-      "type": "dense",
-      "parameters": {
-        "min": 8,
-        "max": 28
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models#gpt-4o-mini"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-4o-mini-search-preview-2025-03-11",
-    "architecture": {
-      "type": "dense",
-      "parameters": {
-        "min": 8,
-        "max": 28
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models#gpt-4o-mini"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
+      "tps": 64,
+      "ttft": 0.49
     }
   },
   {
@@ -5569,58 +5306,6 @@ export const MODELS: readonly ModelData[] = [
   {
     "type": "model",
     "provider": "openai",
-    "name": "gpt-4o-search-preview",
-    "architecture": {
-      "type": "moe",
-      "parameters": {
-        "total": 440,
-        "active": {
-          "min": 44,
-          "max": 132
-        }
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models#gpt-4o"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-4o-search-preview-2025-03-11",
-    "architecture": {
-      "type": "moe",
-      "parameters": {
-        "total": 440,
-        "active": {
-          "min": 44,
-          "max": 132
-        }
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models#gpt-4o"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
     "name": "gpt-5",
     "architecture": {
       "type": "moe",
@@ -5640,8 +5325,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 59,
-      "ttft": 3.02
+      "tps": 78,
+      "ttft": 5.18
     }
   },
   {
@@ -5666,60 +5351,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 59,
-      "ttft": 3.02
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-5-chat-latest",
-    "architecture": {
-      "type": "moe",
-      "parameters": {
-        "total": 300,
-        "active": {
-          "min": 30,
-          "max": 90
-        }
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-5-codex",
-    "architecture": {
-      "type": "moe",
-      "parameters": {
-        "total": 300,
-        "active": {
-          "min": 30,
-          "max": 90
-        }
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
+      "tps": 78,
+      "ttft": 5.18
     }
   },
   {
@@ -5741,8 +5374,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 76.5,
-      "ttft": 4.57
+      "tps": 81.5,
+      "ttft": 2.26
     }
   },
   {
@@ -5764,8 +5397,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 76.5,
-      "ttft": 4.57
+      "tps": 81.5,
+      "ttft": 2.26
     }
   },
   {
@@ -5787,8 +5420,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 84.5,
-      "ttft": 1.57
+      "tps": 113,
+      "ttft": 2.72
     }
   },
   {
@@ -5810,8 +5443,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 84.5,
-      "ttft": 1.57
+      "tps": 113,
+      "ttft": 2.72
     }
   },
   {
@@ -5836,8 +5469,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 2,
-      "ttft": 17.77
+      "tps": 3,
+      "ttft": 11.57
     }
   },
   {
@@ -5862,8 +5495,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 2,
-      "ttft": 17.77
+      "tps": 3,
+      "ttft": 11.57
     }
   },
   {
@@ -5940,8 +5573,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 37.8,
-      "ttft": 1.15
+      "tps": 64.5,
+      "ttft": 1.26
     }
   },
   {
@@ -5966,109 +5599,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 37.8,
-      "ttft": 1.15
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-5.1-chat-latest",
-    "architecture": {
-      "type": "moe",
-      "parameters": {
-        "total": 300,
-        "active": {
-          "min": 30,
-          "max": 90
-        }
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-5.1-codex",
-    "architecture": {
-      "type": "moe",
-      "parameters": {
-        "total": 300,
-        "active": {
-          "min": 30,
-          "max": 90
-        }
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-5.1-codex-max",
-    "architecture": {
-      "type": "moe",
-      "parameters": {
-        "total": 300,
-        "active": {
-          "min": 30,
-          "max": 90
-        }
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-5.1-codex-mini",
-    "architecture": {
-      "type": "dense",
-      "parameters": {
-        "min": 25,
-        "max": 70
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
+      "tps": 64.5,
+      "ttft": 1.26
     }
   },
   {
@@ -6093,8 +5625,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 48,
-      "ttft": 3.45
+      "tps": 47,
+      "ttft": 1.84
     }
   },
   {
@@ -6119,60 +5651,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 48,
-      "ttft": 3.45
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-5.2-chat-latest",
-    "architecture": {
-      "type": "moe",
-      "parameters": {
-        "total": 420,
-        "active": {
-          "min": 42,
-          "max": 126
-        }
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-5.2-codex",
-    "architecture": {
-      "type": "moe",
-      "parameters": {
-        "total": 420,
-        "active": {
-          "min": 42,
-          "max": 126
-        }
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
+      "tps": 45,
+      "ttft": 1.84
     }
   },
   {
@@ -6197,8 +5677,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 15,
-      "ttft": 11.3
+      "tps": 10,
+      "ttft": 5.25
     }
   },
   {
@@ -6223,34 +5703,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 15,
-      "ttft": 11.3
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "gpt-5.3-chat-latest",
-    "architecture": {
-      "type": "moe",
-      "parameters": {
-        "total": 420,
-        "active": {
-          "min": 42,
-          "max": 126
-        }
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
+      "tps": 10,
+      "ttft": 5.25
     }
   },
   {
@@ -6275,8 +5729,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 32.2,
-      "ttft": 2.11
+      "tps": 61.5,
+      "ttft": 1.9
     }
   },
   {
@@ -6301,8 +5755,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 58,
-      "ttft": 1.69
+      "tps": 43.5,
+      "ttft": 1.17
     }
   },
   {
@@ -6327,8 +5781,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 58,
-      "ttft": 1.69
+      "tps": 44.5,
+      "ttft": 1.17
     }
   },
   {
@@ -6350,8 +5804,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 71,
-      "ttft": 0.8
+      "tps": 97,
+      "ttft": 1.85
     }
   },
   {
@@ -6373,8 +5827,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 71,
-      "ttft": 0.8
+      "tps": 97,
+      "ttft": 1.85
     }
   },
   {
@@ -6396,8 +5850,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 51.2,
-      "ttft": 1.28
+      "tps": 75.8,
+      "ttft": 1.06
     }
   },
   {
@@ -6419,8 +5873,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 51.2,
-      "ttft": 1.28
+      "tps": 75.8,
+      "ttft": 1.06
     }
   },
   {
@@ -6445,8 +5899,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 2,
-      "ttft": 5.57
+      "tps": 22,
+      "ttft": 8.41
     }
   },
   {
@@ -6471,8 +5925,8 @@ export const MODELS: readonly ModelData[] = [
       "https://platform.openai.com/docs/models"
     ],
     "deployment": {
-      "tps": 2,
-      "ttft": 5.57
+      "tps": 22,
+      "ttft": 8.41
     }
   },
   {
@@ -6499,8 +5953,8 @@ export const MODELS: readonly ModelData[] = [
       "https://inferencebench.io/models/proprietary/gpt-5-5/"
     ],
     "deployment": {
-      "tps": 47,
-      "ttft": 2.16
+      "tps": 49.2,
+      "ttft": 2.06
     }
   },
   {
@@ -6527,8 +5981,8 @@ export const MODELS: readonly ModelData[] = [
       "https://inferencebench.io/models/proprietary/gpt-5-5/"
     ],
     "deployment": {
-      "tps": 47,
-      "ttft": 2.16
+      "tps": 49.2,
+      "ttft": 2.06
     }
   },
   {
@@ -6555,8 +6009,8 @@ export const MODELS: readonly ModelData[] = [
       "https://www.swfte.com/research/gpt-5-5"
     ],
     "deployment": {
-      "tps": 5,
-      "ttft": 3.45
+      "tps": 9,
+      "ttft": 4.14
     }
   },
   {
@@ -6583,8 +6037,8 @@ export const MODELS: readonly ModelData[] = [
       "https://www.swfte.com/research/gpt-5-5"
     ],
     "deployment": {
-      "tps": 5,
-      "ttft": 3.45
+      "tps": 9,
+      "ttft": 4.14
     }
   },
   {
@@ -6610,8 +6064,8 @@ export const MODELS: readonly ModelData[] = [
       "https://developers.openai.com/api/docs/models/gpt-5.6-luna"
     ],
     "deployment": {
-      "tps": 55,
-      "ttft": 1.99
+      "tps": 78,
+      "ttft": 1.96
     }
   },
   {
@@ -6637,8 +6091,8 @@ export const MODELS: readonly ModelData[] = [
       "https://developers.openai.com/api/docs/models/gpt-5.6-sol"
     ],
     "deployment": {
-      "tps": 44,
-      "ttft": 2.98
+      "tps": 68,
+      "ttft": 2.86
     }
   },
   {
@@ -6664,8 +6118,8 @@ export const MODELS: readonly ModelData[] = [
       "https://developers.openai.com/api/docs/models/gpt-5.6-terra"
     ],
     "deployment": {
-      "tps": 52,
-      "ttft": 2.26
+      "tps": 69,
+      "ttft": 1.62
     }
   },
   {
@@ -6691,8 +6145,8 @@ export const MODELS: readonly ModelData[] = [
       "https://developers.openai.com/api/docs/models/gpt-6-astra"
     ],
     "deployment": {
-      "tps": 35,
-      "ttft": 4.2
+      "tps": 46,
+      "ttft": 4.13
     }
   },
   {
@@ -6718,7 +6172,7 @@ export const MODELS: readonly ModelData[] = [
       "https://developers.openai.com/api/docs/models/gpt-6-luna"
     ],
     "deployment": {
-      "tps": 68,
+      "tps": 65,
       "ttft": 2.17
     }
   },
@@ -6745,8 +6199,8 @@ export const MODELS: readonly ModelData[] = [
       "https://developers.openai.com/api/docs/models/gpt-6-sol"
     ],
     "deployment": {
-      "tps": 60,
-      "ttft": 2.04
+      "tps": 89,
+      "ttft": 2.17
     }
   },
   {
@@ -6772,21 +6226,21 @@ export const MODELS: readonly ModelData[] = [
       "https://developers.openai.com/api/docs/models/gpt-6.1-sol"
     ],
     "deployment": {
-      "tps": 46,
-      "ttft": 3.45
+      "tps": 53,
+      "ttft": 2.94
     }
   },
   {
     "type": "model",
     "provider": "openai",
-    "name": "o1",
+    "name": "gpt-6.1-terra",
     "architecture": {
       "type": "moe",
       "parameters": {
-        "total": 440,
+        "total": 187.5,
         "active": {
-          "min": 44,
-          "max": 132
+          "min": 18.75,
+          "max": 62.5
         }
       }
     },
@@ -6795,24 +6249,24 @@ export const MODELS: readonly ModelData[] = [
       "model-arch-multimodal"
     ],
     "sources": [
-      "https://platform.openai.com/docs/models#o1"
+      "https://developers.openai.com/api/docs/models/gpt-6.1-terra"
     ],
     "deployment": {
-      "tps": 6,
-      "ttft": 1.09
+      "tps": 48,
+      "ttft": 2.17
     }
   },
   {
     "type": "model",
     "provider": "openai",
-    "name": "o1-2024-12-17",
+    "name": "gpt-6.2-astra",
     "architecture": {
       "type": "moe",
       "parameters": {
-        "total": 440,
+        "total": 1200,
         "active": {
-          "min": 44,
-          "max": 132
+          "min": 120,
+          "max": 400
         }
       }
     },
@@ -6821,22 +6275,25 @@ export const MODELS: readonly ModelData[] = [
       "model-arch-multimodal"
     ],
     "sources": [
-      "https://platform.openai.com/docs/models#o1"
+      "https://developers.openai.com/api/docs/models/gpt-6.2-astra"
     ],
     "deployment": {
-      "tps": 6,
-      "ttft": 1.09
+      "tps": 34,
+      "ttft": 4.51
     }
   },
   {
     "type": "model",
     "provider": "openai",
-    "name": "o3-mini",
+    "name": "gpt-6.2-sol",
     "architecture": {
-      "type": "dense",
+      "type": "moe",
       "parameters": {
-        "min": 8,
-        "max": 28
+        "total": 375,
+        "active": {
+          "min": 38,
+          "max": 112
+        }
       }
     },
     "warnings": [
@@ -6844,126 +6301,12 @@ export const MODELS: readonly ModelData[] = [
       "model-arch-multimodal"
     ],
     "sources": [
-      "https://platform.openai.com/docs/models#o3-mini"
+      "https://developers.openai.com/api/docs/changelog",
+      "https://developers.openai.com/api/docs/models/gpt-6.1-sol"
     ],
     "deployment": {
-      "tps": 92,
-      "ttft": 3.06
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "o3-mini-2025-01-31",
-    "architecture": {
-      "type": "dense",
-      "parameters": {
-        "min": 8,
-        "max": 28
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models#o3-mini"
-    ],
-    "deployment": {
-      "tps": 92,
-      "ttft": 3.06
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "o4-mini",
-    "architecture": {
-      "type": "dense",
-      "parameters": {
-        "min": 8,
-        "max": 28
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models#o3-mini"
-    ],
-    "deployment": {
-      "tps": 92,
-      "ttft": 2.93
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "o4-mini-2025-04-16",
-    "architecture": {
-      "type": "dense",
-      "parameters": {
-        "min": 8,
-        "max": 28
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models#o3-mini"
-    ],
-    "deployment": {
-      "tps": 92,
-      "ttft": 2.93
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "o4-mini-deep-research",
-    "architecture": {
-      "type": "dense",
-      "parameters": {
-        "min": 8,
-        "max": 28
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models#o3-mini"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
-    }
-  },
-  {
-    "type": "model",
-    "provider": "openai",
-    "name": "o4-mini-deep-research-2025-06-26",
-    "architecture": {
-      "type": "dense",
-      "parameters": {
-        "min": 8,
-        "max": 28
-      }
-    },
-    "warnings": [
-      "model-arch-not-released",
-      "model-arch-multimodal"
-    ],
-    "sources": [
-      "https://platform.openai.com/docs/models#o3-mini"
-    ],
-    "deployment": {
-      "tps": null,
-      "ttft": null
+      "tps": 74,
+      "ttft": 2.56
     }
   }
 ];

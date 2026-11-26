@@ -48,6 +48,16 @@ export class ModelArchMultimodalWarning extends WarningMessage {
     }
 }
 
+export class ModelNameFuzzyMatchWarning extends WarningMessage {
+    readonly code = "model-name-fuzzy-match";
+
+    constructor(
+        message = "The model name was matched to a similar registered model, expect lower precision.",
+    ) {
+        super(message);
+    }
+}
+
 export class ElectricityMixADPeDefaultWarning extends WarningMessage {
     readonly code = "electricity-mix-adpe-world";
 
@@ -100,6 +110,7 @@ type ErrorConstructor = new () => ErrorMessage;
 const WARNING_CODES: Readonly<Record<string, WarningConstructor>> = {
     "model-arch-not-released": ModelArchNotReleasedWarning,
     "model-arch-multimodal": ModelArchMultimodalWarning,
+    "model-name-fuzzy-match": ModelNameFuzzyMatchWarning,
     "electricity-mix-adpe-world": ElectricityMixADPeDefaultWarning,
     "electricity-mix-pe-world": ElectricityMixPEDefaultWarning,
     "electricity-mix-wue-world": ElectricityMixWUEDefaultWarning,

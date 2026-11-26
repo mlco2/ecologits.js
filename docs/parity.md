@@ -5,7 +5,7 @@ and records what is ported, what is deliberately not, and where the two knowingl
 The language-neutral contract — what any implementation must reproduce — lives in
 [`spec/`](../spec); this document is the port-specific companion to it.
 
-Reference version: **`ecologits` 0.11.2**, commit `c739e8d61f6a12a85864adb698ab85623fe70f3c`,
+Reference version: **`ecologits` 0.12.0**, commit `ec1a73503616b83827305e2f89b9c5da0f65d177`,
 recorded in [`spec/manifest.json`](../spec/manifest.json).
 
 ## Module mapping
@@ -33,6 +33,8 @@ recorded in [`spec/manifest.json`](../spec/manifest.json).
 | `ecologits/_ecologits.py` (`EcoLogits.init`, `config`, `label`)                                  | Instrumentation lifecycle; meaningless without adapters           |
 | `ecologits/impacts/video.py`, `ecologits/estimations/video.py`, `data/video_models.json`         | Video generation, a separate methodology added upstream in 0.11.0 |
 | `ecologits/utils/opentelemetry.py`                                                               | OTLP metrics export                                               |
+| `ecologits/tracking.py` (`track_impacts`)                                                        | Instrumentation lifecycle                                         |
+| Stream proxies in `ecologits/tracers/utils.py`                                                   | Provider stream instrumentation                                   |
 
 ## Known divergences
 
@@ -68,14 +70,7 @@ whose bounds are themselves `RangeValue`s, which Pydantic rejects with a `Valida
 than inventing a value. Note that the reflected case `x / rv` (a plain number on the left)
 _does_ work upstream, as `rv.__rtruediv__(x)`, and the port reproduces it.
 
-### 3. `sources` is populated
-
-`Model.from_json` tests `if "source" in data` but then reads `data["sources"]`. The singular
-key never exists in the data files, so upstream always leaves `sources` empty. The port reads
-`sources` as clearly intended. The field is provenance metadata only — it does not feed any
-computation — so no estimate changes.
-
-### 4. `total_ordering` is reproduced literally
+### 3. `total_ordering` is reproduced literally
 
 Python defines `__eq__`, `__le__` and `__ge__` on `BaseImpact` and applies `@total_ordering`.
 `total_ordering` picks its root with a plain string `max`, so `"__le__"` wins over `"__ge__"`,
@@ -87,21 +82,21 @@ and the derived operators are:
 Both are implemented as-is. Note `a < b` and `a >= b` are not complements, which is surprising
 but is what upstream ships. Verified against Python in `test/modeling.test.ts`.
 
-### 5. Comparisons on `RangeValue` are asymmetric
+### 4. Comparisons on `RangeValue` are asymmetric
 
 Which bound is consulted depends on the operator _and_ on which side the range sits, because
 Python falls back to reflected methods when the left operand is a plain number. `arithmetic.ts`
 documents the full table. All 49 ordered pairs of the value matrix are checked against Python
 in `test/range-value.test.ts`.
 
-### 6. Logging levels
+### 5. Logging levels
 
 Python delegates to the `logging` module, whose default level is WARNING, so `debug`/`info` go
 nowhere unless the host application configures logging. JavaScript has no equivalent global
 configuration, so `debug` and `info` are silent by default here too. Call
 `logger.setSink(...)` to capture output.
 
-### 7. Float rendering in `RangeValue.toString()`
+### 6. Float rendering in `RangeValue.toString()`
 
 Python distinguishes `int` from `float` when formatting, so `RangeValue(1, 2)` renders as
 `1.5 [1 - 2]` while `RangeValue(1.0, 2.0)` renders as `1.5 [1.0 - 2.0]`. JavaScript has a
@@ -113,7 +108,7 @@ exponent padding (`1e-07`) and the trailing `.0` on integral floats. `test/range
 pins the thresholds through `packages/ecologits.js/test/vectors/range-value.json`, which the
 Python implementation generated.
 
-### 8. `assets` is an extension beyond the Python API
+### 7. `assets` is an extension beyond the Python API
 
 `ComputeLlmImpactsDagParams.assets` lets a caller inject or override any DAG input by name,
 and is merged last so it wins over the named parameters. Upstream accepts `**kwargs` on

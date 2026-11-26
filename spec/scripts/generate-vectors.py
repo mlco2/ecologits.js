@@ -100,7 +100,7 @@ def import_python_package(python_dir: Path) -> dict[str, Any]:
     from ecologits.impacts.llm import compute_llm_impacts
     from ecologits.model_repository import ParametersMoE, models
     from ecologits.status_messages import _error_codes, _warning_codes
-    from ecologits.tracers.utils import PROVIDER_CONFIG_MAP, llm_impacts
+    from ecologits.tracers.utils import PROVIDER_CONFIG_MAP, _llm_impacts
     from ecologits.utils.range_value import RangeValue
 
     # The package logs a warning the first time a status message is produced. Those messages
@@ -118,7 +118,7 @@ def import_python_package(python_dir: Path) -> dict[str, Any]:
         "warning_codes": _warning_codes,
         "error_codes": _error_codes,
         "provider_config_map": PROVIDER_CONFIG_MAP,
-        "llm_impacts": llm_impacts,
+        "llm_impacts": _llm_impacts,
     }
 
 
@@ -715,6 +715,7 @@ def build_repository(pkg: dict[str, Any]) -> dict[str, Any]:
                 "architectureType": model.architecture.type.value,
                 "parameters": parameters_of(model),
                 "warningCodes": [w.code for w in model.warnings],
+                "sources": model.sources,
                 "deployment": (
                     {"tps": model.deployment.tps, "ttft": model.deployment.ttft}
                     if model.deployment
@@ -783,8 +784,9 @@ def build_llm_impacts_output(pkg: dict[str, Any]) -> dict[str, Any]:
         provider: str,
         model_name: str,
         tokens: int,
-        latency: float,
+        latency: float | None,
         zone: str | None,
+        **overrides: Any,
     ) -> None:
         inputs = {
             "provider": provider,
@@ -792,6 +794,7 @@ def build_llm_impacts_output(pkg: dict[str, Any]) -> dict[str, Any]:
             "outputTokenCount": tokens,
             "requestLatency": latency,
             "electricityMixZone": zone,
+            **{key: ser(value, pkg["RangeValue"]) for key, value in overrides.items()},
         }
         try:
             result = llm_impacts(
@@ -800,6 +803,13 @@ def build_llm_impacts_output(pkg: dict[str, Any]) -> dict[str, Any]:
                 output_token_count=tokens,
                 request_latency=latency,
                 electricity_mix_zone=zone,
+                **{
+                    {
+                        "datacenterPue": "datacenter_pue",
+                        "datacenterWue": "datacenter_wue",
+                    }[key]: value
+                    for key, value in overrides.items()
+                },
             )
         except (
             Exception
@@ -839,6 +849,42 @@ def build_llm_impacts_output(pkg: dict[str, Any]) -> dict[str, Any]:
     add("error/unknown-provider", "nope", "whatever", 200, 5.0, None)
 
     RangeValue = pkg["RangeValue"]
+    # Nullable latency and datacenter overrides added to the tracer utility in 0.12.0.
+    add("latency/estimated", "openai", "gpt-4o-mini", 200, None, None)
+    add(
+        "override/defaults", "openai", "gpt-4o-mini", 200, 5.0, None,
+        datacenterPue=None, datacenterWue=None,
+    )
+    add(
+        "override/scalars", "openai", "gpt-4o-mini", 200, None, "CAF",
+        datacenterPue=1.5, datacenterWue=0.25,
+    )
+    add(
+        "override/ranges", "openai", "gpt-4o-mini", 200, 5.0, None,
+        datacenterPue=RangeValue(min=1.1, max=1.4),
+        datacenterWue=RangeValue(min=0.0, max=0.5),
+    )
+    add(
+        "override/boundaries", "openai", "gpt-4o-mini", 200, 5.0, None,
+        datacenterPue=1, datacenterWue=0,
+    )
+    for key, minimum in [("datacenterPue", 1), ("datacenterWue", 0)]:
+        for label, value in [
+            ("below-minimum", minimum - 0.1),
+            ("range-below-minimum", RangeValue(min=minimum - 0.1, max=minimum + 1)),
+            ("boolean", True),
+            ("string", "invalid"),
+        ]:
+            add(
+                f"override/{key}/{label}", "openai", "gpt-4o-mini", 200, 5.0, None,
+                **{key: value},
+            )
+        # Overrides are validated before model and zone lookup.
+        add(
+            f"override/{key}/unknown-model", "nope", "missing", 200, None, "ZZZ",
+            **{key: minimum - 1},
+        )
+
     provider_config_map = {
         provider: {
             "datacenterLocation": config.datacenter_location,

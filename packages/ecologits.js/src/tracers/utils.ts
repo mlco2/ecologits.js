@@ -1,4 +1,5 @@
 import { electricityMixes } from "../electricity_mix_repository.js";
+import { EcoLogitsValueError } from "../exceptions.js";
 import { computeLlmImpacts } from "../impacts/llm.js";
 import type { ADPe, Embodied, Energy, GWP, Impacts, PE, Usage, WCF } from "../impacts/modeling.js";
 import { logger } from "../log.js";
@@ -151,8 +152,12 @@ export interface LlmImpactsParams {
     modelName: string;
     /** Number of generated tokens. */
     outputTokenCount: number;
-    /** Measured request latency in seconds. */
-    requestLatency: number;
+    /** Measured request latency in seconds, or null to estimate it. */
+    requestLatency: number | null;
+    /** Power Usage Effectiveness, at least 1. Defaults to the provider's assumption. */
+    datacenterPue?: ValueOrRange | null;
+    /** Water Usage Effectiveness in L/kWh, at least 0. Defaults to the provider's assumption. */
+    datacenterWue?: ValueOrRange | null;
     /**
      * ISO 3166-1 alpha-3 zone overriding the provider's datacenter location. Falls back to
      * the provider default, then to `"WOR"`.
@@ -160,7 +165,25 @@ export interface LlmImpactsParams {
     electricityMixZone?: string | null;
 }
 
+function validateDatacenterOverride(
+    name: string,
+    value: ValueOrRange | null | undefined,
+    minimum: number,
+): void {
+    if (value == null) return;
+    const values = value instanceof RangeValue ? [value.min, value.max] : [value];
+    if (
+        values.some(
+            (number) => typeof number !== "number" || !Number.isFinite(number) || number < minimum,
+        )
+    ) {
+        throw new EcoLogitsValueError(`${name} must be finite and at least ${minimum}.`);
+    }
+}
+
 export function llmImpacts(params: LlmImpactsParams): ImpactsOutput {
+    validateDatacenterOverride("datacenter_pue", params.datacenterPue, 1);
+    validateDatacenterOverride("datacenter_wue", params.datacenterWue, 0);
     const model = models.findModel(params.provider, params.modelName);
     if (model === undefined) {
         const error = new ModelNotRegisteredError(
@@ -196,8 +219,8 @@ export function llmImpacts(params: LlmImpactsParams): ImpactsOutput {
             ifElectricityMixPe: electricityMix.pe,
             ifElectricityMixGwp: electricityMix.gwp,
             ifElectricityMixWue: electricityMix.wue,
-            datacenterPue: config.datacenterPue,
-            datacenterWue: config.datacenterWue,
+            datacenterPue: params.datacenterPue ?? config.datacenterPue,
+            datacenterWue: params.datacenterWue ?? config.datacenterWue,
             tps: model.deployment?.tps ?? null,
             ttft: model.deployment?.ttft ?? null,
         }),

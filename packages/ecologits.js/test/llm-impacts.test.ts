@@ -7,17 +7,21 @@ import {
     ModelArchMultimodalWarning,
     ModelNotRegisteredError,
     models,
+    EcoLogitsValueError,
     PROVIDER_CONFIG_MAP,
     ZoneNotRegisteredError,
+    type ValueOrRange,
 } from "../src/index.js";
-import { expectDeepClose, readVector } from "./helpers.js";
+import { expectDeepClose, readVector, reviveValueOrRange } from "./helpers.js";
 
 interface CaseInputs {
     provider: string;
     modelName: string;
     outputTokenCount: number;
-    requestLatency: number;
+    requestLatency: number | null;
     electricityMixZone: string | null;
+    datacenterPue?: unknown;
+    datacenterWue?: unknown;
 }
 
 interface OutputCase {
@@ -39,12 +43,18 @@ function serialize(output: ImpactsOutput): unknown {
 }
 
 function call(inputs: CaseInputs): ImpactsOutput {
+    const override = (value: unknown): ValueOrRange | null | undefined =>
+        value !== null && typeof value === "object"
+            ? reviveValueOrRange(value)
+            : (value as ValueOrRange | null | undefined);
     return llmImpacts({
         provider: inputs.provider,
         modelName: inputs.modelName,
         outputTokenCount: inputs.outputTokenCount,
         requestLatency: inputs.requestLatency,
         electricityMixZone: inputs.electricityMixZone,
+        datacenterPue: override(inputs.datacenterPue),
+        datacenterWue: override(inputs.datacenterWue),
     });
 }
 
@@ -66,13 +76,16 @@ describe("llmImpacts parity with Python", () => {
 
     it("covers every registered model", () => {
         expect(models.listModels().length).toBeGreaterThan(300);
-        expect(vector.cases.length).toBeGreaterThan(350);
+        const names = new Set(vector.cases.map((testCase) => testCase.name));
+        for (const model of models.listModels()) {
+            expect(names.has(`${model.provider}/${model.name}`)).toBe(true);
+        }
     });
 
     for (const testCase of vector.cases) {
         it(testCase.name, () => {
             if (testCase.pythonError !== undefined) {
-                expect(() => call(testCase.inputs)).toThrow();
+                expect(() => call(testCase.inputs)).toThrow(EcoLogitsValueError);
                 return;
             }
             expectDeepClose(serialize(call(testCase.inputs)), testCase.expected);
@@ -105,6 +118,22 @@ describe("llmImpacts behaviour", () => {
         expect(result.energy).toBeNull();
         expect(result.usage).toBeNull();
     });
+
+    for (const key of ["datacenterPue", "datacenterWue"] as const) {
+        for (const value of [NaN, Infinity, -Infinity]) {
+            it(`rejects nonfinite ${key}: ${value}`, () => {
+                expect(() =>
+                    llmImpacts({
+                        provider: "openai",
+                        modelName: "gpt-4o-mini",
+                        outputTokenCount: 200,
+                        requestLatency: null,
+                        [key]: value,
+                    }),
+                ).toThrow(EcoLogitsValueError);
+            });
+        }
+    }
 
     it("reports an unregistered zone as an error naming the zone", () => {
         const result = llmImpacts({
