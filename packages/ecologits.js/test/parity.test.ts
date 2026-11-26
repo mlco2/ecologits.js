@@ -72,7 +72,7 @@ describe("computeLlmImpacts parity with Python ecologits", () => {
 });
 
 /**
- * `docs/parity.md` divergence #8: `assets` is an extension beyond the Python API. It is merged
+ * `docs/parity.md` divergence #7: `assets` is an extension beyond the Python API. It is merged
  * last, so it wins over the named parameters, and omitting it must reproduce the contract
  * exactly. Those are the two properties the extension promises, so they are the ones pinned.
  */

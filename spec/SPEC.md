@@ -9,6 +9,7 @@ implementation in this repository is validated against it through the vectors in
 The key words **MUST**, **MUST NOT** and **MAY** are used as in RFC 2119.
 
 - Spec version: [`VERSION`](./VERSION), restated in [`manifest.json`](./manifest.json)
+- Reference implementation: `ecologits` 0.12.0 (commit recorded in the manifest)
 - Conformance: [`CONFORMANCE.md`](./CONFORMANCE.md)
 - Machine-readable schemas: [`schema/`](./schema)
 
@@ -99,15 +100,19 @@ Rules:
 
 ## 5. High-level contract
 
-Given a provider, a model name, an output token count and a measured latency, an
+Given a provider, a model name, an output token count and a nullable measured latency, an
 implementation MUST:
 
-1. Resolve the model within the provider. An unknown model is an **error result**, not an
+1. Validate any datacenter overrides: PUE MUST be finite and at least 1, WUE MUST be
+   finite and at least 0, including both bounds of an interval. Invalid overrides MUST raise
+   before model or zone lookup. Null overrides use the provider defaults.
+2. Resolve the model within the provider. An unknown model is an **error result**, not an
    exception.
-2. Resolve the electricity mix: the caller's explicit zone, else the provider's datacenter
+3. Resolve the electricity mix: the caller's explicit zone, else the provider's datacenter
    location, else `WOR`. An unknown zone is an **error result**.
-3. Run the estimator of §4 with the provider's datacenter assumptions.
-4. Attach the model's and the mix's warnings, **deduplicated by code**. Errors are **not**
+4. Run the estimator of §4 with the provider's datacenter assumptions, overridden by any
+   supplied PUE/WUE. A null measured latency uses the modelled latency.
+5. Attach the model's and the mix's warnings, **deduplicated by code**. Errors are **not**
    deduplicated.
 
 Provider datacenter assumptions (normative):
@@ -126,7 +131,7 @@ Provider datacenter assumptions (normative):
 Warning codes (non-exhaustive rendering; the vectors carry the exact strings):
 
 `model-arch-not-released`, `model-arch-multimodal`, `electricity-mix-adpe-world`,
-`electricity-mix-pe-world`, `electricity-mix-wue-world`.
+`electricity-mix-pe-world`, `electricity-mix-wue-world`, `model-name-fuzzy-match`.
 
 Error codes: `model-not-registered`, `zone-not-registered`.
 

@@ -24,6 +24,10 @@ yarn add @ecologits/ecologits.js
 
 ## Usage
 
+`llmImpacts` accepts `requestLatency: null` to estimate latency and optional
+`datacenterPue` / `datacenterWue` scalar or `RangeValue` overrides. PUE must be finite
+and at least 1; WUE must be finite and at least 0. Null overrides use provider defaults.
+
 `llmImpacts` is the high-level entry point: give it a provider, a model name and what you
 measured, and it looks up the model and the electricity mix for you.
 
@@ -174,7 +178,7 @@ impacts. Video generation and OpenTelemetry export are also still to come. See
 
 ## Parity
 
-Every number this package produces is checked against the Python implementation. See the
+The core estimator is checked against Python `ecologits` 0.12.0. See the
 [root README](../../README.md#numerical-parity) for how to run and regenerate the vectors.
 
 ## License

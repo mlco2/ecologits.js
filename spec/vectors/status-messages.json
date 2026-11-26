@@ -22,6 +22,16 @@
    }
   },
   {
+   "code": "model-name-fuzzy-match",
+   "className": "ModelNameFuzzyMatchWarning",
+   "message": "The model name was matched to a similar registered model, expect lower precision.",
+   "str": "The model name was matched to a similar registered model, expect lower precision. For further information visit https://ecologits.ai/tutorial/warnings_and_errors/#model-name-fuzzy-match",
+   "dump": {
+    "code": "model-name-fuzzy-match",
+    "message": "The model name was matched to a similar registered model, expect lower precision."
+   }
+  },
+  {
    "code": "electricity-mix-adpe-world",
    "className": "ElectricityMixADPeDefaultWarning",
    "message": "The electricity mix ADPe factor is using the world default value, expect lower precision.",

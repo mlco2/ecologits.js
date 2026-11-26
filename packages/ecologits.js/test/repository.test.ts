@@ -14,6 +14,7 @@ interface ModelEntry {
     architectureType: string;
     parameters: Record<string, unknown>;
     warningCodes: string[];
+    sources: readonly string[];
     deployment: { tps: number | null; ttft: number | null } | null;
 }
 
@@ -48,6 +49,7 @@ function serializeModel(model: Model): ModelEntry {
         architectureType: model.architecture.type,
         parameters: serializeParameters(model.architecture.parameters),
         warningCodes: model.warnings.map((warning) => warning.code),
+        sources: model.sources,
         deployment: model.deployment
             ? { tps: model.deployment.tps, ttft: model.deployment.ttft }
             : null,
@@ -77,10 +79,7 @@ describe("data layer parity with Python", () => {
         expect(aliased?.provider).toBe("anthropic");
     });
 
-    it("populates `sources`, unlike upstream's singular-key bug", () => {
-        // Divergence #3 in docs/parity.md: upstream guards on `"source"` but reads
-        // `data["sources"]`, so it always leaves the list empty. The port reads `sources` as
-        // intended. The field is provenance metadata and never feeds a computation.
+    it("populates model provenance sources", () => {
         const model = models.findModel("openai", "gpt-4o-mini");
         expect(model).toBeDefined();
         expect(model?.sources.length).toBeGreaterThan(0);

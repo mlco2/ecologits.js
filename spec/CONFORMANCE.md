@@ -41,10 +41,10 @@ is part of the contract.
 
 ```json
 {
-    "specVersion": "0.2.0",
+    "specVersion": "0.3.0",
     "reference": {
         "implementation": "ecologits",
-        "version": "0.11.2",
+        "version": "0.12.0",
         "commit": "…",
         "pythonVersion": "…"
     },
@@ -61,6 +61,8 @@ the expected values are produced by the real package, not written by hand.
 python spec/scripts/generate-vectors.py                 # writes spec/ + test vectors in place
 python spec/scripts/generate-vectors.py --python-dir PATH
 ```
+
+Regeneration requires Python 3.11 or newer.
 
 The generator imports the Python package from a sibling checkout (`$ECOLOGITS_PY_DIR` by
 default). Regeneration is expected to be a no-op while that checkout sits at the commit

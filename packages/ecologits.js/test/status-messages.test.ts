@@ -35,7 +35,7 @@ const vector = readVector<StatusMessagesVector>("status-messages.json");
 
 describe("status message parity with Python", () => {
     it("has the same catalogue size as upstream", () => {
-        expect(vector.warnings).toHaveLength(5);
+        expect(vector.warnings).toHaveLength(6);
         expect(vector.errors).toHaveLength(2);
     });
 
